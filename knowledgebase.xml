@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tool>
+<nombre>foro</nombre>
+<descripcion>EL foro es una herramienta</descripcion>
+<que_es>Jani</que_es>
+<como_funciona>Reminder</como_funciona>
+<ejemplo>Don't forget me this weekend!</ejemplo>
+</tool>

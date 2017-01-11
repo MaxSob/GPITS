@@ -1,0 +1,5 @@
+{
+    "require": {
+        "iboldurev/api-ai-php": "^0.2.5"
+    }
+}
