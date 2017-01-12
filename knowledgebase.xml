@@ -1,8 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <tool>
 <nombre>foro</nombre>
-<descripcion>EL foro es una herramienta</descripcion>
-<que_es>Jani</que_es>
-<como_funciona>Reminder</como_funciona>
-<ejemplo>Don't forget me this weekend!</ejemplo>
+<descripcion>EL foro es una herramienta que permite interactuar</descripcion>
+<que_es>El foro hace muchas cosas wuuuu</que_es>
+<como_funciona>Funciona como se debe</como_funciona>
+<ejemplo>/files/ejemplo_foro.pdf</ejemplo>
 </tool>
+
+<!--tool>
+<nombre>Etiqueta</nombre>
+<descripcion>La etiqueta es una herramienta que permite interactuar</descripcion>
+<que_es>La etiqueta hace muchas cosas wuuuu</que_es>
+<como_funciona>Funciona como se debe</como_funciona>
+<ejemplo>/files/ejemplo_etiqueta.pdf</ejemplo>
+</tool-->
