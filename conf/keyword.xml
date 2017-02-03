@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<data>
+  <property>
+    <key>nombre</key>
+    <sinonyms>
+      <sinonym>CHAT</sinonym>
+      <sinonym>BASE DE DATOS</sinonym>
+      <sinonym>ELECCION</sinonym>
+      <sinonym>ENCUESTA</sinonym>
+      <sinonym>CONVERSATION</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>descripcion</key>
+    <sinonyms>
+      <sinonym>QUE ES</sinonym>
+      <sinonym>DE QUE VA</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>para_que_se_usa</key>
+    <sinonyms>
+      <sinonym>PARA QUE SIRVE</sinonym>
+      <sinonym>PARA QUE SE USA</sinonym>
+      <sinonym>QUE HACE</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>como_funciona</key>
+    <sinonyms>
+      <sinonym>COMO FUNCIONA</sinonym>
+      <sinonym>COMO SE USA</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>ventajas</key>
+    <sinonyms>
+      <sinonym>VENTAJAS</sinonym>
+      <sinonym>VENTAJA</sinonym>
+      <sinonym>QUE DE BUENO TIENE</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>que_eres</key>
+    <sinonyms>
+      <sinonym>HOLA</sinonym>
+      <sinonym>Que eres</sinonym>
+      <sinonym>Que haces</sinonym>
+      <sinonym>Para que sirves</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>despedida</key>
+    <sinonyms>
+      <sinonym>Adiós</sinonym>
+      <sinonym>Bye</sinonym>
+      <sinonym>Nos vemos</sinonym>
+      <sinonym>Hasta luego</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>robot</key>
+    <sinonyms>
+      <sinonym>Robot</sinonym>
+      <sinonym>Eres automático</sinonym>
+      <sinonym>Magia</sinonym>
+      <sinonym>Mágico</sinonym>
+      <sinonym>Humano</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>dime_algo</key>
+    <sinonyms>
+      <sinonym>Dime algo</sinonym>
+      <sinonym>Cuéntame algo</sinonym>
+      <sinonym>Ya me aburrí</sinonym>
+      <sinonym>X</sinonym>
+    </sinonyms>
+  </property>
+</data>

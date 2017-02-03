@@ -1,5 +1,5 @@
 <?php
-include_once("Domain.php");
+include_once("gpits_core.php");
 include_once("XmlDriver.php");
 include_once("MoodleToolsDomainKnowledge.php");
 

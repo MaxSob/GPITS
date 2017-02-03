@@ -25,15 +25,12 @@ class XmlDriver extends Driver {
     if($this->objects != null) {
       foreach($this->objects as $o) {
         $match = true;
-        foreach ($query->fields as $f) {
-          echo " Checando la propiedad $f->name establecida a $f->value <br />";
+        foreach ($query->fields as $f)
           if(strtoupper($o->{$f->name}) != strtoupper($f->value))
             $match = false;
-        }
-        if($match) {
-          echo "Match... " . var_dump($o) . "<br />";
-          return $o->{$query->get_property};
-        }
+        //If every property matched we have the object and we get the property
+        if($match)
+          return (string) $o->{$query->get_property};
       }
     }
     return null;
