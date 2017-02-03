@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tool>
+<nombre>Base de Datos</nombre>
+<descripcion>El módulo de actividad de base de datos permite a los participantes crear, mantener y buscar información en un banco de registros. La estructura de estas entradas es definida por el maestro como un número de campos.</descripcion>
+<tipo_campo>Los tipos de campo incluyen casilla de cotejo (verificación), botones de selección, menú desplegable, área de texto, URL, imágen y archivos subidos.</tipo_campo>
+<como_funciona>El diseño visual de la información al listarla, verla o editar las entradas de la base de datos puede ser controlada mediante plantillas de la base de datos. Las actividades de la base de datos pueden compartirse entre cursos como preconfiguraciones y un profesor también puede importar y exportar entradas de la base de datos.</como_funciona>
+<para_que_se_usa>Las actividades de la base de datos tienen muchos usos como:
+Una colección colaborativa de enlaces de internet, libros, revisiones de libros, referencias de revistas, etc
+Para mostrar fotos, posters, sitios web o poesías creadas por alumnos para revisión y comentarios por pares
+</para_que_se_usa>
+<ventajas>
+Si se habilita el filtro de auto-enlazado de la base de datos, cualquier entrada en la base de datos será automáticamente enlazado adonde aparezcan estas palabras o frases dentro del curso.
+Un profesor puede permitir comentarios en las entradas. Las entradas pueden calificarse por profesores o alumnos (evaluación por pares). Las evaluaciones pueden juntarse para formar una calificación final que se graba en el libro de calificaciones.
+</ventajas>
+<ejemplo>/files/ejemplo_foro.pdf</ejemplo>
+</tool>

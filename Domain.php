@@ -1,9 +1,6 @@
 <?php
 class DomainKnowledge {
-
-  function __toString() {
-    return 'Data';
-  }
+  protected $config = '';
 }
 
 class Field {
@@ -13,7 +10,7 @@ class Field {
 
 class Query {
   public $raw_data = '';
-  public $getProperty = '';
+  public $get_property = '';
   public $fields = array();
 
   function __construct() {
@@ -24,6 +21,7 @@ class Query {
     $f = new Field();
     $f->name = $name;
     $f->value = $value;
+    $this->fields[] = $f;
   }
 
   protected function getQuery() {
@@ -32,5 +30,7 @@ class Query {
 }
 
 abstract class Driver {
+  protected $base = "";
+  abstract protected function connect();
   abstract protected function runQuery($query);
 }

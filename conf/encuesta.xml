@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tool>
+<nombre>Encuesta</nombre>
+<descripcion>
+El módulo de actividad Encuesta predefinida proporciona un número de instrumentos de encuesta verificada que han demostrado utilidad para evaluar y estimular el aprendizaje en el entorno en línea.
+</descripcion>
+<como_funciona>
+Las herramientas de encuesta están pre-pobladas con preguntas. Los profesores que deseen crear sus propias encuestas deberían emplear mejor el módulo de actividad retroalimentación.
+</como_funciona>
+<para_que_se_usa>
+ El profesor puede utilizarlos para recopilar información que le ayude a conocer mejor su clase y reflexionar sobre su propia enseñanza.
+</para_que_se_usa>
+</tool>

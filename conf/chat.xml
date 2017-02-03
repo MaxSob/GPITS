@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tool>
+<nombre>CHAT</nombre>
+<descripcion>
+El módulo de actividad Chat permite que los participantes tengan una discusión sincrónica, basada en texto, en tiempo real en la web.
+</descripcion>
+<como_funciona>
+El chat puede ser una actividad por única ocasión o puede repetirse a la misma hora cada día o cada semana. Las sesiones de chat se guardan y pueden hacerse disponibles para que todos las vean o limitadas a los usuarios con el permiso de ver bitácoras de sesiones de chat.
+</como_funciona>
+<para_que_se_usa>
+Los chats son especialmente útiles cuando el grupo no podría juntarse para realizar conversaciones cara-a-cara, como
+
+Reuniones regulares de estudiantes inscritos a cursos en línea, para permitirles compartir experiencias con otros compañeros del mismo curso pero de diferente ciudad (o país)
+Un estudiante que temporalmente no puede asistir en persona conversa con chat con su maestro, para ponerse al tanto del trabajo escolar
+Estudiantes que empiezan a trabajar se juntan para discutir sus experiencias entre ellos y con el maestro
+Niños pequeños en casa por las tardes, como una introducción controlada (monitoreada) al mundo de las redes sociales
+Una sesión de preguntas y respuestas con un orador invitado de una localidad diferente (a distancia)
+Sesiones para ayudarles a los estudiantes a prepararse para exámenes, donde el maestro, o los estudiantes, hagan preguntas de ejemplo
+</para_que_se_usa>
+</tool>

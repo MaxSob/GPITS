@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tool>
+<nombre>Elección</nombre>
+<descripcion>
+El módulo de actividad Elección permite al profesor hacer una sola pregunta y ofrecer una selección de respuestas posibles.
+</descripcion>
+<como_funciona>
+Los resultados de la elección pueden publicarse después de que los estudiantes hayan contestado, o después de cierta fecha, o nunca. Los resultados pueden publicarse junto con los nombres de los estudiantes o de forma anónima.
+</como_funciona>
+<para_que_se_usa>
+Una actividad de elección puede emplearse para
+
+Una encuesta rápida para estimular que piensen sobre un tema particular
+Para evaluar rápidamente que tanto entendieron los estudiantes
+Para facilitarles a los estudiantes la toma de decisiones, por ejemplo para votar sobre la dirección que tomará el curso
+</para_que_se_usa>
+</tool>
