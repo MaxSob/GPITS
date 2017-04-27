@@ -2,6 +2,7 @@
 include_once("gpits_core.php");
 include_once("XmlDriver.php");
 include_once("MoodleToolsDomainKnowledge.php");
+include_once("mits.php");
 
 function getResponse($msg) {
   $domain = new MoodleToolsDomainKnowledge();
@@ -21,5 +22,8 @@ function getResponse($msg) {
 }
 
 $msg = $_REQUEST["msg"];
-echo getResponse($msg);
+//echo getResponse($msg);
+
+$controller = new MITSController();
+echo $controller->processQuery($msg, null);
 //return getResponse($msg);

@@ -31,3 +31,6 @@ if($data != null)
   echo $data . " <br />";
 else
   echo "Por el momento no cuento con esa informacion <br />";
+
+$lev = levenshtein("Hola", "Holas");
+echo "La distancia de Levenshtein es $lev <br />";

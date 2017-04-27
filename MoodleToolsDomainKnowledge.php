@@ -2,7 +2,7 @@
 class MoodleToolsDomainKnowledge extends DomainKnowledge {
   protected $config = '';
   public $data = '';
-  //Thye key property identifies the object which is intended to access by teh user
+  //The key property identifies the object which is intended to access by the user
   //For Mooodle Tools the name of the tool is the key to know the tool that the user is
   //Quering about. The properties to get is the atribute of the object that the user is
   //asking for.
@@ -51,4 +51,14 @@ class MoodleToolsDomainKnowledge extends DomainKnowledge {
       return true;
     return false;
   }
+
+  function getEntitesNames() {
+    $entites = array();
+    foreach ($this->data as $property) {
+      foreach ($property->sinonyms->sinonym as $s)
+      $entites[] = $s;
+    }
+    return $entities;
+  }
+
 }

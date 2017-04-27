@@ -1,14 +1,33 @@
 <?php
-abstract class DomainKnowledge {
-  abstract protected function generateQuery($raw_query);
+/*Chatbot Classes*/
+class Entity {
+  protected $type;
+  protected $name;
+  protected $instance;
 }
 
-abstract class Driver {
-  protected $base = "";
-  abstract protected function connect();
-  abstract protected function runQuery($query);
+class Context {
+  protected $path;
+  protected $entities;
 }
 
+abstract class MemoryManager {
+  public abstract function getUserContext($user);
+  public abstract function updateUserContext($user, $context);
+}
+
+abstract class EntityExtractor {
+  protected  $entities;
+  public abstract function extractEntities($query);
+}
+
+abstract class ChatBotController {
+  public abstract function processQuery($query, $user);
+  public abstract function constructQuery($raw);
+}
+
+
+/*Domain Knowledge Access Classes*/
 class Field {
   public $name;
   public $value;
@@ -45,6 +64,20 @@ class Query {
   }
 }
 
+
+abstract class Driver {
+  protected $base = "";
+  abstract protected function connect();
+  abstract protected function runQuery($query);
+}
+
+
+abstract class DomainKnowledge {
+  abstract protected function generateQuery($raw_query);
+}
+
+
+/*ITS Classes*/
 class Request {
   public $raw_query;
   public $user;
@@ -73,6 +106,7 @@ abstract class Tutor {
   public abstract function attendRequest($request);
 }
 
+/*User profiles classes*/
 abstract class User {}
 
 class UserProfile {
