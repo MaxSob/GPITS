@@ -22,8 +22,9 @@ function getResponse($msg) {
 }
 
 $msg = $_REQUEST["msg"];
+$user = ($_REQUEST["user"])?$_REQUEST["user"]:'1';
 //echo getResponse($msg);
 
 $controller = new MITSController();
-echo $controller->processQuery($msg, null);
+echo $controller->processQuery($msg, $user);
 //return getResponse($msg);

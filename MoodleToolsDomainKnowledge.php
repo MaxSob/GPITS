@@ -27,6 +27,7 @@ class MoodleToolsDomainKnowledge extends DomainKnowledge {
 
   function generateQuery($raw_query) {
     $q = new Query();
+    $q->raw_data = $raw_query;
     foreach ($this->data as $property) {
       foreach ($property->sinonyms->sinonym as $s)
         if($this->isKeywordInString($raw_query, $s)) {

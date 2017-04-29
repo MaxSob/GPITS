@@ -55,7 +55,15 @@ class Query {
     $this->fields[] = $f;
   }
 
-  protected function __toString() {
+  function getField($name) {
+    foreach ($this->fields as $f) {
+      if($f->name == $name)
+        return $f->value;
+    }
+    return null;
+  }
+
+  public function __toString() {
     $return = "Get property: " . $this->get_property . " ";
     foreach ($this->fields as $f) {
       $return .= $f->name . " : " . $f->value . " ";
