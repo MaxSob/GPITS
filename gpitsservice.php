@@ -28,3 +28,7 @@ $user = ($_REQUEST["user"])?$_REQUEST["user"]:'1';
 $controller = new MITSController();
 echo $controller->processQuery($msg, $user);
 //return getResponse($msg);
+
+//This output should be commented
+$profiler = new MITSUserProfiler();
+var_dump($profiler->decideUserProfile($user));
