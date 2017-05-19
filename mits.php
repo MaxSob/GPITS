@@ -179,20 +179,20 @@ class MITSUserProfiler extends UserProfiler {
     for($i = 0; $i < $t; $i++) {
       $level = 1;
       $use = $this->decideLevelForTool($user, $i);
-      echo "Level of use $use <br />";
+      //echo "Level of use $use <br />";
       for($j=0; $j < $l; $j++) {
         $lev = $this->tools[$i][$j];
-        echo "Checking level against $lev <br />";
+        //echo "Checking level against $lev <br />";
         if($use > $this->tools[$i][$j])
           $level = $j + 2;
       }
-      echo "Level selected $level <br />";
+      //echo "Level selected $level <br />";
       $user_data[] = $level;
     }
 
-    echo 'Checking use for <br /><br />';
+    /*echo 'Checking use for <br /><br />';
     var_dump($user_data);
-    echo '<br /><br />';
+    echo '<br /><br />';*/
     $index = null;
     $similarity = 0;
     $pn = count($this->profiles);
@@ -202,7 +202,7 @@ class MITSUserProfiler extends UserProfiler {
       var_dump($b);
       $s = $this->computeSimilarity($user_data, $b, $l);
 
-      echo "Soft cosine similarity between a and b $s <br />";
+      //echo "Soft cosine similarity between a and b $s <br />";
       if($s > $similarity) {
         $index = $i;
         $similarity = $s;
@@ -233,9 +233,9 @@ class MITSUserProfiler extends UserProfiler {
   //This function decides which level to apply to the tool
   function decideLevelForTool($user, $index) {
     $data = $this->getUseDataForTool($user, $index);
-    echo 'Checking use for <br /><br />';
+    /*echo 'Checking use for <br /><br />';
     var_dump($data);
-    echo '<br /><br />';
+    echo '<br /><br />';*/
     $mu = 0;
     $sigma = 0;
     $m = count($data);
@@ -255,11 +255,11 @@ class MITSUserProfiler extends UserProfiler {
       if(sqrt(pow(($val - $mu), 2)) < 2*$sigma) {
         $level_of_use += $val;
         $counter += 1.0;
-        echo "Including $val <br />";
+        //echo "Including $val <br />";
       }
     }
 
-    echo "Mean $mu, Sigma $sigma  Level of use $level_of_use <br />";
+    //echo "Mean $mu, Sigma $sigma  Level of use $level_of_use <br />";
 
     if($counter > 0)
       return $level_of_use/$counter;

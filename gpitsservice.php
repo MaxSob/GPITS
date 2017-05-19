@@ -31,4 +31,4 @@ echo $controller->processQuery($msg, $user);
 
 //This output should be commented
 $profiler = new MITSUserProfiler();
-var_dump($profiler->decideUserProfile($user));
+//var_dump($profiler->decideUserProfile($user));
