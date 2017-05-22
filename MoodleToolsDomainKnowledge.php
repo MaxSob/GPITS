@@ -2,6 +2,7 @@
 class MoodleToolsDomainKnowledge extends DomainKnowledge {
   protected $config = '';
   public $data = '';
+  public $conversations_keys;
   //The key property identifies the object which is intended to access by the user
   //For Mooodle Tools the name of the tool is the key to know the tool that the user is
   //Quering about. The properties to get is the atribute of the object that the user is
@@ -11,6 +12,7 @@ class MoodleToolsDomainKnowledge extends DomainKnowledge {
   function __construct() {
     $this->config = './conf/keyword.xml';
     $this->loadConfig();
+    $this->conversations_keys = array('que_eres', 'despedida', 'robot', 'dime_algo');
   }
 
   function loadConfig() {
@@ -31,12 +33,16 @@ class MoodleToolsDomainKnowledge extends DomainKnowledge {
     foreach ($this->data as $property) {
       foreach ($property->sinonyms->sinonym as $s)
         if($this->isKeywordInString($raw_query, $s)) {
+          //echo "************************$s está presente en $raw_query *************************** <br />";
           if($property->key == $this->key_property)
             $q->addField($this->key_property, $s);
           else
             $q->get_property = $property->key;
       }
     }
+
+    if(in_array($q->get_property, $this->conversations_keys))
+      $q->setField('nombre', 'CONVERSATION');
     return $q;
   }
 
@@ -48,6 +54,19 @@ class MoodleToolsDomainKnowledge extends DomainKnowledge {
   }
 
   function isKeywordInString($string, $keyword) {
+    $tiger_jump = 0.3;
+    if(count($keyword) < 5)
+      $tiger_jump = 0.2;
+    $similitud = compareWords(prepareString($string), prepareString($keyword));
+    $s = $similitud['score'];
+    //echo "$s con $keyword <br />";
+    //echo substr($string, $similitud['index'], $similitud['final_index'] - $similitud['index']) . '<br />';
+    if($s < $tiger_jump)
+      return true;
+    return false;
+  }
+
+  function isKeywordInStringOld($string, $keyword) {
     if(strpos(strtoupper(" " . $string), strtoupper($keyword)) != false)
       return true;
     return false;

@@ -116,6 +116,9 @@ class MITSController extends ChatBotController {
     $mm = new MITSMemoryManager();
     $context = $mm->getUserContext($user);
     $query = $this->constructQuery($query);
+    //var_dump($query);
+    $update = true;
+
     if(count($query->fields) == 0) {
       if($context["entity"] == "")
         $query->addField('nombre', 'CONVERSATION');
@@ -132,7 +135,11 @@ class MITSController extends ChatBotController {
       $context["intention"] = $query->get_property;
     }
 
-    $mm->updateUserContext($user, $context);
+    if($query->hasField('nombre', 'CONVERSATION'))
+      $update = false;
+
+    if($update)
+      $mm->updateUserContext($user, $context);
 
     $driver = new XmlDriver();
     $data = $driver->runQuery($query);

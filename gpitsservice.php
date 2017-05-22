@@ -3,6 +3,7 @@ include_once("gpits_core.php");
 include_once("XmlDriver.php");
 include_once("MoodleToolsDomainKnowledge.php");
 include_once("mits.php");
+include_once("StringUtils.php");
 
 function getResponse($msg) {
   $domain = new MoodleToolsDomainKnowledge();

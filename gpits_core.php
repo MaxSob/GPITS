@@ -42,7 +42,7 @@ class Field {
 class Query {
   public $raw_data = null;
   public $get_property = null;
-  public $fields = array();
+  public $fields;
 
   function __construct($raw_data = null) {
     $this->raw_data = $raw_data;
@@ -51,7 +51,6 @@ class Query {
 
   function addField($name, $value=null) {
     $f = new Field($name, $value);
-    //$f->init($name, $value);
     $this->fields[] = $f;
   }
 
@@ -69,6 +68,19 @@ class Query {
       $return .= $f->name . " : " . $f->value . " ";
     }
     return $return;
+  }
+
+  public function setField($name, $value) {
+    $this->fields = array();
+    $this->addField($name, $value);
+  }
+
+  public function hasField($name, $value) {
+    foreach ($this->fields as $f) {
+      if($f->name == $name && $f->value == $value)
+        return true;
+    }
+    return false;
   }
 }
 

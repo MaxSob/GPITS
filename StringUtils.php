@@ -34,36 +34,46 @@ function compareWords($input, $entry) {
 	$check = trim($input);
 	$finding = trim($entry);
 
-	if(strlen($check) < strlen($entry))
-		return levNormalized($check, $entry);
+	//Intercambiamos
+	if(strlen($check) < strlen($entry)) {
+		//return array("index" => 0, "final_index" => (count($input) -1), "score" => levNormalized($check, $finding));
+		$temp = $entry;
+		$entry = $check;
+		$check = $temp;
+	}
+
 
 	$index = 0;
 	$best = 0;
+	$entry_size = strlen($entry);
 	$bestScore = levNormalized($check, $entry);
-	$data = substr($check, $index);
-	while(strlen($data) > strlen($entry)) {
-		echo "Checking $data <br />";
+	$data = substr($check, $index, $entry_size);
+//	while(strlen($data) > strlen($entry)) {
+	while($index < strlen($check)) {
+		//echo "Checking $data";
 		$score = levNormalized($data, $entry);
+		//echo "... $score <br />";
 		if($score < $bestScore) {
 			$best = $index;
 			$bestScore = $score;
 		}
 		$index += 1;
-		$data = substr($check, $index);
+		//$data = substr($check, $index);
+		$data = substr($check, $index, $entry_size);
 	}
 
 	//Obtenemos la cadena de mejor score
-	$beststring = substr($check, $best);
+	/*$beststring = substr($check, $best);
 	$copy = $beststring;
-	while(strlen($copy) >= strlen($entry)) {
-		echo "Checking $copy <br />";
+	while(strlen($copy) >= strlen($entry) && strlen($copy) > 0) {
+		//echo "Checking $copy <br />";
 		$score = levNormalized($copy, $entry);
 		if($score < $bestScore) {
 			$bestScore = $score;
 		}
 		$copy = substr($copy, 0, strlen($copy) - 2);
-	}
-	return array("index" => $best, "final_index" => $best + strlen($copy), "score" => $bestScore);
+	}*/
+	return array("index" => $best, "final_index" => $best + $entry_size, "score" => $bestScore);
 }
 
 //Eliminamos los caracteres especiales del espanol y
