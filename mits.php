@@ -172,8 +172,9 @@ class MITSUserProfiler extends UserProfiler {
     //var_dump($this->tools);
 
     $this->profiles = array();
-    $this->profiles[] = array(1, 2, 3, 1, 2, 4, 5, 4, 3, 2);
-    $this->profiles[] = array(3, 4, 5, 2, 1, 4, 2, 2, 1, 3);
+    $this->profiles[] = array(5, 5, 5, 1, 1, 1, 1, 1, 1, 1);
+    $this->profiles[] = array(1, 1, 1, 5, 5, 5, 5, 1, 1, 1);
+    $this->profiles[] = array(1, 1, 1, 1, 1, 1, 1, 5, 5, 5);
 
     //var_dump($this->profiles);
   }
@@ -197,9 +198,9 @@ class MITSUserProfiler extends UserProfiler {
       $user_data[] = $level;
     }
 
-    /*echo 'Checking use for <br /><br />';
+    echo 'Checking use for <br /><br />';
     var_dump($user_data);
-    echo '<br /><br />';*/
+    echo '<br /><br />';
     $index = null;
     $similarity = 0;
     $pn = count($this->profiles);
@@ -209,7 +210,29 @@ class MITSUserProfiler extends UserProfiler {
       var_dump($b);
       $s = $this->computeSimilarity($user_data, $b, $l);
 
-      //echo "Soft cosine similarity between a and b $s <br />";
+      echo "Cosine similarity between a and b $s <br />";
+      if($s > $similarity) {
+        $index = $i;
+        $similarity = $s;
+      }
+    }
+
+    return array('user_data' => $user_data, 'profile' => $index, 'similarity' => $similarity);
+  }
+
+  function decideUserProfileFromData($user_data) {
+
+    $l = count($this->tools[0]);
+    $t = count($this->tools);
+
+    $index = null;
+    $similarity = 0;
+    $pn = count($this->profiles);
+    for($i = 0; $i < $pn; $i++) {
+      //We compute s as the soft cosine smilarity between profile i and user data
+      $b = $this->profiles[$i];
+      $s = $this->computeSimilarity($user_data, $b, $l);
+
       if($s > $similarity) {
         $index = $i;
         $similarity = $s;
@@ -220,7 +243,7 @@ class MITSUserProfiler extends UserProfiler {
   }
 
   //This function computes the soft cosine similarity between a and b vectors
-  function computeSimilarity($a, $b, $scale = 5) {
+  function computeSoftSimilarity($a, $b, $scale = 5) {
     $similarity = 0;
     $sum = 0;
     $suma = 0;
@@ -234,6 +257,36 @@ class MITSUserProfiler extends UserProfiler {
         $sumb += $sij * $b[$i] * $b[$j];
       }
     $similarity = $sum / (sqrt($suma) * sqrt($sumb));
+    return $similarity;
+  }
+
+  //This function computes the soft cosine similarity between a and b vectors
+  function computeCosineSimilarity($a, $b, $scale = 5) {
+    $similarity = 0;
+    $sum = 0;
+    $suma = 0;
+    $sumb = 0;
+    $n = count($a);
+    for($i = 0; $i < $n; $i++) {
+      $sum += $a[$i] * $b[$i];
+      $suma += $a[$i] * $a[$i];
+      $sumb += $b[$i] * $b[$i];
+    }
+
+    $similarity = $sum / (sqrt($suma) * sqrt($sumb));
+    return $similarity;
+  }
+
+  //Diferencia normalizada de los vectores a y b
+  function computeSimilarity($a, $b, $scale = 5) {
+    $similarity = 0;
+    $sum = 0;
+    $n = count($a);
+    for($i = 0; $i < $n; $i++) {
+      $sum += 1 - (abs($a[$i] - $b[$i]))/$scale;
+    }
+
+    $similarity = $sum / ($n * 1.0);
     return $similarity;
   }
 
