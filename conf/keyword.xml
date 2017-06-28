@@ -25,6 +25,7 @@
       <sinonym>PARA QUE SIRVE</sinonym>
       <sinonym>PARA QUE SE USA</sinonym>
       <sinonym>QUE HACE</sinonym>
+      <sinonym>DE QUE SIRVE</sinonym>
     </sinonyms>
   </property>
 
@@ -46,12 +47,11 @@
   </property>
 
   <property>
-    <key>que_eres</key>
+    <key>saludo</key>
     <sinonyms>
       <sinonym>HOLA</sinonym>
-      <sinonym>Que eres</sinonym>
-      <sinonym>Que haces</sinonym>
-      <sinonym>Para que sirves</sinonym>
+      <sinonym>Que onda</sinonym>
+      <sinonym>Que hay</sinonym>
     </sinonyms>
   </property>
 

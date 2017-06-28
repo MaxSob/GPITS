@@ -198,19 +198,19 @@ class MITSUserProfiler extends UserProfiler {
       $user_data[] = $level;
     }
 
-    echo 'Checking use for <br /><br />';
+    /*echo 'Checking use for <br /><br />';
     var_dump($user_data);
-    echo '<br /><br />';
+    echo '<br /><br />';*/
     $index = null;
     $similarity = 0;
     $pn = count($this->profiles);
     for($i = 0; $i < $pn; $i++) {
       //We compute s as the soft cosine smilarity between profile i and user data
       $b = $this->profiles[$i];
-      var_dump($b);
+      //var_dump($b);
       $s = $this->computeSimilarity($user_data, $b, $l);
 
-      echo "Cosine similarity between a and b $s <br />";
+      //echo "Cosine similarity between a and b $s <br />";
       if($s > $similarity) {
         $index = $i;
         $similarity = $s;
@@ -243,7 +243,7 @@ class MITSUserProfiler extends UserProfiler {
   }
 
   //This function computes the soft cosine similarity between a and b vectors
-  function computeSoftSimilarity($a, $b, $scale = 5) {
+  function computeSoftCosineSimilarity($a, $b, $scale = 5) {
     $similarity = 0;
     $sum = 0;
     $suma = 0;

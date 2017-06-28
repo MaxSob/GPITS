@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <tool>
 <nombre>Conversation</nombre>
-<que_eres>Soy una herramienta automatizada que responde preguntas acerca del uso de las herramientas de moodle.</que_eres>
+<saludo>Hola, soy una herramienta automatizada que responde preguntas acerca del uso de las herramientas de moodle.</saludo>
 <despedida>Hasta pronto</despedida>
 <robot>Soy una herramienta automatizada.</robot>
 <dime_algo>El cielo es azul</dime_algo>
