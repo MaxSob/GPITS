@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tool>
+<nombre>Glosario</nombre>
+<descripcion>
+  El módulo de actividad Glosario permite a los participantes crear y mantener una lista de definiciones, igual que un diccionario, o colectar y organizar recursos o información.
+</descripcion>
+<tipo_campo>Perdón, no tengo registrada información relativa a los tipos de campo del glosario.</tipo_campo>
+<como_funciona>
+  Un profesor puede permitir comentarios a las entradas. Las entradas pueden calificarse por los profesores o alumnos (evaluación por pares). Las calificaciones de entradas se agregan para formar una calificación final que se guarda en el libro de calificaciones.
+</como_funciona>
+<para_que_se_usa>
+  Los glosarios tienen muchos usos como
+
+Un banco colaborativo de palabras clave
+Un espacio para 'empezar a conocerse' donde los estudiantes ponen su nombre y detalles personales (NOTA: Tener cuidado con reglamentación de datos personales en cada país)
+Un recurso de 'tips útiles' sobre las mejores prácticas en una materia práctica
+Una zona para compartir videos, imágenes o archivos de sonido
+Un recurso de revisión sobre datos que debemos recordar
+</para_que_se_usa>
+<ventajas>
+Una ventaja es que si se habilita el filtro de auto-enlazado del glosario, las entradas serán automáticamente enlazadas a donde las palabras o frases del concepto aparezcan dentro del curso.
+</ventajas>
+<ejemplo>/files/ejemplo_glosario.pdf</ejemplo>
+</tool>

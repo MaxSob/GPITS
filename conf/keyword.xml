@@ -7,6 +7,16 @@
       <sinonym>BASE DE DATOS</sinonym>
       <sinonym>ELECCION</sinonym>
       <sinonym>ENCUESTA</sinonym>
+      <sinonym>EXAMEN</sinonym>
+      <sinonym>HERRAMIENTA EXTERNA</sinonym>
+      <sinonym>FORO</sinonym>
+      <sinonym>GLOSARIO</sinonym>
+      <sinonym>LECCION</sinonym>
+      <sinonym>RETROALIMENTACION</sinonym>
+      <sinonym>SCORM</sinonym>
+      <sinonym>TALLER</sinonym>
+      <sinonym>TAREA</sinonym>
+      <sinonym>WIKI</sinonym>
       <sinonym>CONVERSATION</sinonym>
     </sinonyms>
   </property>
@@ -34,6 +44,8 @@
     <sinonyms>
       <sinonym>COMO FUNCIONA</sinonym>
       <sinonym>COMO SE USA</sinonym>
+      <sinonym>COMO SE UTILIZA</sinonym>
+      <sinonym>COMO LO USO</sinonym>
     </sinonyms>
   </property>
 

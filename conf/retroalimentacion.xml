@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tool>
+<nombre>Retroalimentación</nombre>
+<descripcion>
+El módulo de actividad de Retroalimentación le permite al profesor crear encuestas personalizadas para colectar retroalimentación de los participantes, empleando una variedad de tipos de preguntas que incluyen opción múltiple, falso/verdadero, o respuesta de texto.
+</descripcion>
+<como_funciona>
+Las respuestas de retroalimentación pueden ser anónimas si así se desea, y los resultados se pueden mostrar a todos los participantes o limitarse a solamente los profesores. Cualquier actividad de retroalimentación en la página de portada del sitio Moodle puede ser contestada por usuarios sin necesidad de autenticarse.
+</como_funciona>
+<para_que_se_usa>
+  Las actividades de retroalimentación pueden usarse:
+
+  Para evaluaciones del curso, ayudando a mejorar el contenido para participantes futuros
+  Para permitirles a los participantes apuntarse a módulos y eventos del curso
+  Para encuestas de invitados sobre variedad de cursos, políticas escolares, etc.
+  Para encuestas anti-bullying en las que los estudiantes pueden reportar incidentes anónimamente
+</para_que_se_usa>
+<ventajas>
+Perdón, no poseo información acerca de las ventajas de la Retroalimentación.
+</ventajas>
+</tool>

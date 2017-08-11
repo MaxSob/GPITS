@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tool>
+<nombre>Taller</nombre>
+<descripcion>
+El módulo de actividad Taller permite la colecta, revisión y evaluación por pares del trabajo de los estudiantes.
+</descripcion>
+<como_funciona>
+  Los estudiantes pueden enviar cualquier contenido digital (archivos), tales como documentos de procesador de texto o de hojas de cálculo y también pueden escribir el texto directamente en un campo empleando un editor de texto (dentro de Moodle).
+
+  Los envíos son evaluados empleando un formato de evaluación de criterios múltiples definido por el profesor. El proceso de revisión por pares y el formato para comprender cómo funciona la evaluación se pueden practicar por anticipado con envíos de muestra proporcionados por el maestro, junto con una evaluación de referencia. A los estudiantes se les dará la oportunidad de evaluar uno o más de los envíos de sus pares estudiantes. Los que envían y los que evalúan pueden permanecer anónimos si se requiere así.
+</como_funciona>
+<para_que_se_usa>
+ Se usa para la colecta, revisión y evaluación por pares del trabajo de los estudiantes
+</para_que_se_usa>
+<ventajas>
+Perdón, no poseo información acerca de las ventajas del taller.
+</ventajas>
+</tool>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tool>
+<nombre>Examen</nombre>
+<descripcion>La actividad de examen le permite al profesor crear exámenes con preguntas de varios tipos, incluyendo opción múltiple, falso/verdadero, relacionar columnas, respuesta corta y calculada.</descripcion>
+<como_funciona>Un profesor puede permitir que se intente realizar el examen en varias ocasiones con el orden de las preguntas acomodado aleatoriamente. Se puede establecer un límite de tiempo si se desea.</como_funciona>
+<para_que_se_usa>La actividad de examen le permite al profesor crear exámenes con preguntas de varios tipos, incluyendo opción múltiple, falso/verdadero, relacionar columnas, respuesta corta y calculada.
+Un profesor puede permitir que se intente realizar el examen en varias ocasiones con el orden de las preguntas acomodado aleatoriamente. Se puede establecer un límite de tiempo si se desea.
+</para_que_se_usa>
+<ventajas>
+La actividad de examen le permite al profesor crear exámenes con preguntas de varios tipos, incluyendo opción múltiple, falso/verdadero, relacionar columnas, respuesta corta y calculada.
+Un profesor puede permitir que se intente realizar el examen en varias ocasiones con el orden de las preguntas acomodado aleatoriamente. Se puede establecer un límite de tiempo si se desea.
+</ventajas>
+<ejemplo>/files/ejemplo_examen.pdf</ejemplo>
+</tool>

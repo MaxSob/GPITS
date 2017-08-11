@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tool>
+<nombre>Paquete SCORM</nombre>
+<descripcion>
+Un paquete SCORM es una colección de archivos que están empaquetados de acuerdo a el stándard acordado para objetos de aprendizaje. El módulo de actividad SCORM permite que los paquetes SCORM o AICC se suban como un archivo ZIP y se añadan al curso.
+</descripcion>
+<como_funciona>
+El contenido generalmente se muestra sobre varias páginas, con navegación entre ellas. Hay varias opciones para mostrar contenidos; en ventana emergente, con una tabla de contenidos, con botones de navegación, etc.
+</como_funciona>
+<para_que_se_usa>
+  Las actividades SCORM pueden usarse
+
+  Para presentar animaciones y contenido multimedia
+  Como herramienta de evaluación
+</para_que_se_usa>
+<ventajas>
+Perdón, no poseo información acerca de las ventajas del paquete SCORM.
+</ventajas>
+</tool>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tool>
+<nombre>Foro</nombre>
+<descripcion>
+  El módulo de actividad Foro les permite a los participantes tener discusiones asincrónicas (en diferentes tiempos), que suceden a lo largo de un largo período de tiempo.
+</descripcion>
+<tipo_campo>
+  Existen varios tipos de foros a elegir, como el foro estándar donde cualquiera puede empezar una nueva discusión en cualquier momento, un foro donde cada estudiante solamente puede publicar exactamente una discusión, un foro de preguntas y respuestas donde los estudiantes deben publicar un mensaje antes de poder ver los mensajes de los otros estudiantes. Un profesor puede permitir que se anexen archivos a los mensajes del foro y las imágenes anexas se mostrarán en el mensaje del foro.
+</tipo_campo>
+<como_funciona>
+  Los participantes pueden suscribirse al foro para recibir avisos de nuevos mensajes en el foro. Un profesor puede configurar el modo de suscripción a opcional, forzado o auto, o impedir completamente las suscripciones. Si se requiere, se puede prohibir a los alumnos que publiquen más de un número determinado de mensajes en un período de tiempo para evitar que algún individuo acapare las discusiones.
+</como_funciona>
+<para_que_se_usa>
+  Los foros tienen varios usos como:
+
+  Un espacio introductorio para que los estudiantes del curso se conozcan entre ellos
+  Un espacio para avisos del curso (empleando un foro de noticias con suscripción forzosa)
+  Un centro de ayuda donde los tutores y alumnos pueden dar orientación
+  Un método informal para compartir (y potencialmente hacer evaluación por pares) documentos entre estudiantes
+  Para continuar en línea un tema que surgió previamente en una sesión de clase presencial
+  Un lugar para que los profesores discutan entre ellos (empleando un foro oculto a los alumnos)
+  Para actividades de extensión, por ejemplo, desafíos mentales para que los alumnos ponderen y sugieran soluciones
+  Un espacio social para discusiones fuera del tema del curso
+</para_que_se_usa>
+<ventajas>
+Una de las principales ventajas del foro es que permite a los participantes tener discusiones asincrónicas (en diferentes tiempos).
+</ventajas>
+<ejemplo>/files/ejemplo_foro.pdf</ejemplo>
+</tool>

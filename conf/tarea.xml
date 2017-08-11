@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tool>
+<nombre>Tarea</nombre>
+<descripcion>
+ El módulo de actividad tarea le permite al maestro comunicar quehaceres, recolectar los trabajos y proporcionar calificaciones y retroalimentación.
+</descripcion>
+<tipo_campo>
+  Existe una gran vairdad de herramientas externas con soporte LTI (). Puedes consultar algunas en <a href="https://www.imsglobal.org/cc/statuschart.cfm">aquí</a>
+</tipo_campo>
+<como_funciona>
+Los estudiantes pueden enviar cualquier contenido digital (archivos), tal como documentos de procesador de textos, hojas de cálculo, imágenes y clips de audio o video. De forma alterna, o adicional, la tarea puede requerir que el estudiante escriba texto directamente en un campo empleando un editor de texto.
+</como_funciona>
+<para_que_se_usa>
+ Las tareas también pueden emplearse para el envío de contenido digital y también para recordarle a los estudiantes sobre tareas 'de la vida real' que necesitan realizar fuera de línea, como trabajos para clases de arte, asistencia a museos y otras actividades que no requieren de contenidos digitales. Los estudiantes pueden enviar su trabajo en forma individual o como miembros de un equipo.
+</para_que_se_usa>
+<ventajas>
+  Cuando se revisan las tareas, los profesores pueden dejar comentarios de retroalimentación y subir archivos; por ejemplo documentos de alumnos con anotaciones del profesor, o comentarios grabados en audio. Las tareas pueden calificarse empleando una escala numérica o escala a la medida, o un método de calificación avanzado como rúbrica. Las calificaciones finales se anotan en el libro de calificaciones.
+</ventajas>
+<ejemplo>/files/ejemplo_tarea.pdf</ejemplo>
+</tool>
