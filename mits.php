@@ -84,6 +84,15 @@ class MITSMemoryManager extends MemoryManager {
     mysqli_query($connection, $query);
     $this->contexts[$user] = $context;
   }
+
+  //This function adds an interaction
+  function addInteraction($user, $query, $response) {
+    $connection = $this->getConnection();
+    $date = date("Y-m-d h:i:s");
+    $insert = "Insert into interactions Values(NULL, '$user', '$query', '$response', '$date')";
+    mysqli_query($connection, $insert);
+    return true;
+  }
 }
 
 //EntityExtractor for the MITS system
@@ -145,6 +154,9 @@ class MITSController extends ChatBotController {
     $data = $driver->runQuery($query);
     if($data == null || $data == '')
       $data = "Puedes reformular la pregunta?";
+
+    //Update the interactions
+    $mm->addInteraction($user, $query->raw_data, $data);
 
     return json_encode(['respuesta'=> $data]);
   }
