@@ -44,13 +44,11 @@ require.config({
             }
             $.uiBackCompat = false;
             var userobj = {'userid':id,'name':fname,'lname':lname,'img':imageurl};
-            var room = tk + '-main-c-room';//ToDo:
+            var room = 'main-c-room';//ToDo:
             dataobject = {
                 'userid':id,
                 'sid':sid,
                 'rid': path,
-                'authuser':auth_user,
-                'authpass':auth_pass,
                 'userobj': userobj,
                 'room':room};
     
@@ -159,14 +157,6 @@ require.config({
                     $('#hide_bar input').removeClass('close').addClass('expand');
                     $('#hide_bar input').prop('title', 'Open chat');
                     tabs.tabs( "refresh" );//tabs
-                });
-                
-                $(document).on("authentication_failed", function(e) {
-                
-                    document.cookie = "auth_user=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
-                    document.cookie = "auth_pass=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
-                    document.cookie = "path=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
-                    clib.display_error(e.message);
                 });
                 
                 $(document).on("error", function(e) {

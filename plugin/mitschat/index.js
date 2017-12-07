@@ -28,13 +28,11 @@ if (!window.opener) { // Check popup
     vcJQuery = jQuery;
     $.uiBackCompat = false;
     var userobj = {'userid':id,'name':fname,'lname':lname,'img':imageurl};
-    var room = tk + '-main-c-room';//ToDo:
+    var room = 'main-c-room';//ToDo:
     dataobject = {
         'userid':id,
         'sid':sid,
         'rid': path,
-        'authuser':auth_user,
-        'authpass':auth_pass,
         'userobj': userobj,
         'room':room};
     
@@ -142,13 +140,6 @@ if (!window.opener) { // Check popup
             tabs.tabs( "refresh" );//tabs
         });
         
-        $(document).on("authentication_failed", function(e) {
-        
-            document.cookie = "auth_user=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
-            document.cookie = "auth_pass=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
-            document.cookie = "path=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
-            display_error(e.message);
-        });
         
         $(document).on("error", function(e) {
             if(typeof e.message != 'object') {
