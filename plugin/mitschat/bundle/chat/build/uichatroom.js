@@ -174,9 +174,9 @@ define(['jquery', 'jqueryui', 'bundle/io/build/iolib'], function($, jui, io) {
             .keydown(function(event) {
                 if(event.keyCode && event.keyCode == $.ui.keyCode.ENTER) {
                     var msg = $.trim($(this).val());
-                    self.options.boxManager.addMsg(io.cfg.userobj.name, msg);
+                    self.options.boxManager.addMsg(fname, msg);
                     $(this).val('');
-                    $.getJSON("http://localhost/GPITS/gpitsservice.php?msg=" + msg, function(data) {
+                    $.getJSON("http://localhost/GPITS/gpitsservice.php?msg=" + msg + "&user=" + id, function(data) {
                       setTimeout(function() {
                         self.options.boxManager.addMsg('Tutor', data.respuesta);
                         //$(this).val('');
