@@ -4,4 +4,5 @@ function set_mitschat_variable(Y, mitsopts) {
     id = mitsopts.id;
     fname = mitsopts.fname;
     lname = mitsopts.lname;
+    imageurl = mitsopts.imageurl;
 }

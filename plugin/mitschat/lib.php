@@ -68,7 +68,7 @@ function local_mitschat_extend_navigation(global_navigation $nav) {
                 $PAGE->requires->js('/local/mitschat/module.js');
                 $mitsarray = array('wwwroot' =>"$CFG->wwwroot/",
                 'sid'=>$USER->sesskey, 'id' => $USER->id, 
-                'fname' => $USER->firstname, 'lname' => $USER->lastname);
+                'fname' => $USER->firstname, 'lname' => $USER->lastname, 'imageurl'=>$src);
                 $PAGE->requires->js_init_call('set_mitschat_variable', array($mitsarray));
             }
         $PAGE->requires->js_call_amd('local_mitschat/mitschat', 'init',array("$CFG->wwwroot/"));
