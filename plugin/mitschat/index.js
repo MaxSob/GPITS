@@ -32,6 +32,7 @@ if (!window.opener) { // Check popup
     dataobject = {
         'userid':id,
         'sid':sid,
+        'rid': path,
         'userobj': userobj,
         'room':room};
     
