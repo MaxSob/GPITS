@@ -92,9 +92,9 @@ define(['jquery', 'jqueryui', 'bundle/io/src/iolib','src/lang.en', 'src/chatboxM
              return;
         }
 
-        if(localStorage.getItem('init') != 'false') {
+        /*if(localStorage.getItem('init') != 'false') {
             io.init(dataobject);
-        }
+        }*/
 
         $('body').footerbar();
 

@@ -176,7 +176,7 @@ define(['jquery', 'jqueryui', 'bundle/io/build/iolib'], function($, jui, io) {
                     var msg = $.trim($(this).val());
                     self.options.boxManager.addMsg(io.cfg.userobj.name, msg);
                     $(this).val('');
-                    $.getJSON("http://localhost/mcampos/GPITS/gpitsservice.php?msg=" + msg, function(data) {
+                    $.getJSON("http://localhost/GPITS/gpitsservice.php?msg=" + msg, function(data) {
                       setTimeout(function() {
                         self.options.boxManager.addMsg('Tutor', data.respuesta);
                         //$(this).val('');
