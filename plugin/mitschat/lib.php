@@ -66,7 +66,8 @@ function local_mitschat_extend_navigation(global_navigation $nav) {
                 $userpicture = moodle_url::make_pluginfile_url(context_user::instance($USER->id)->id, 'user', 'icon', null, '/', 'f2');
                 $src = $userpicture->out(false);
                 $PAGE->requires->js('/local/mitschat/module.js');
-                $mitsarray = array('sid'=>$USER->sesskey, 'id' => $USER->id, 
+                $mitsarray = array('wwwroot' =>"$CFG->wwwroot/",
+                'sid'=>$USER->sesskey, 'id' => $USER->id, 
                 'fname' => $USER->firstname, 'lname' => $USER->lastname);
                 $PAGE->requires->js_init_call('set_mitschat_variable', array($mitsarray));
             }
