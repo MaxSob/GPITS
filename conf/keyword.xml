@@ -64,6 +64,8 @@
       <sinonym>HOLA</sinonym>
       <sinonym>Que onda</sinonym>
       <sinonym>Que hay</sinonym>
+      <sinonym>Que pex</sinonym>
+      <sinonym>Buen día</sinonym>
     </sinonyms>
   </property>
 
@@ -94,7 +96,7 @@
       <sinonym>Dime algo</sinonym>
       <sinonym>Cuéntame algo</sinonym>
       <sinonym>Ya me aburrí</sinonym>
-      <sinonym>X</sinonym>
+      <sinonym>Puedes decir otras cosas</sinonym>
     </sinonyms>
   </property>
 </data>

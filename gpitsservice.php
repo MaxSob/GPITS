@@ -5,31 +5,29 @@ include_once("MoodleToolsDomainKnowledge.php");
 include_once("mits.php");
 include_once("StringUtils.php");
 
-function getResponse($msg) {
-  $domain = new MoodleToolsDomainKnowledge();
-  $driver = new XmlDriver();
-  $query = $domain->generateQuery($msg);
-  //$query = $domain->generateQuery('Que es un chat');
-  if(count($query->fields) == 0)
-    $query->addField('nombre', 'CONVERSATION');
-  //echo $query . "<br />";
-  $data = $driver->runQuery($query);
-  if($data == null || $data == '')
-    $data = "Puedes reformular la pregunta?";
-   /*echo $data;
-   echo var_dump($data);*/
+function getResponse($msg, $user) {
+  $tutor = new MITSTutor();
+  return $tutor->attendRequest($msg, $user);
+}
 
-  return json_encode(['respuesta'=> $data]);
+function getRecommendation($user) {
+  $tutor = new MITSTutor();
+  return $tutor->decideFedBack($user); 
 }
 
 $msg = $_REQUEST["msg"];
 $user = ($_REQUEST["user"])?$_REQUEST["user"]:'1';
-//echo getResponse($msg);
+$r = ($_REQUEST["r"])?$_REQUEST["r"]:'0';
 
-$controller = new MITSController();
-echo $controller->processQuery($msg, $user);
-//return getResponse($msg);
+if($r != '0') {
+  //echo "Recommending <br />";
+  echo getRecommendation($user);
+} else {
+  //echo "Responding to $msg <br />";
+  echo getResponse($msg, $user);
+}
+  
 
 //This output should be commented
-$profiler = new MITSUserProfiler();
-//var_dump($profiler->decideUserProfile($user));
+/*$profiler = new MITSUserProfiler();
+var_dump($profiler->decideUserProfile($user));*/

@@ -191,6 +191,13 @@ class MITSUserProfiler extends UserProfiler {
     //var_dump($this->profiles);
   }
 
+  //This function obtains the name of the tool
+  function getTool($index) {
+    $names = array('conversacion', 'base de datos', 'chat', 'eleccion', 'encuesta', 'examen', 'externa',
+    'foro', 'glosario', 'leccion', 'scorm', 'retroalimentacion', 'taller', 'tarea', 'wiki');
+    return $names[$index];
+  }
+
   function decideUserProfile($user) {
     //$this->initialize();
     $user_data = array();
@@ -344,5 +351,37 @@ class MITSUserProfiler extends UserProfiler {
     for($i=0; $i<$n; $i++)
       $use[] = rand(1, 100);
     return $use;
+  }
+}
+
+//This function implements the tutor
+class MITSTutor extends Tutor {
+  var $profiler;
+
+  function __construct() {
+    $this->profiler = new MITSUserProfiler();
+  }
+
+  public  function decideFedBack($user) {
+    $profile = $this->profiler->decideUserProfile($user);
+    $data = $profile['user_data'];
+    $selected_profile = $profile['profile'];
+    $index = 0;
+    $difference = max($data[0] - $this->profiler->profiles[$selected_profile][0], 0);
+    for($i=0; $i < count($data); $i++) {
+      $diff = max($data[$i] - $this->profiler->profiles[$selected_profile][$i], 0);
+      if($diff > $difference) {
+        $difference = $diff;
+        $index = $i;
+      }
+    }
+    return $this->attendRequest('TQue es ' . $this->profiler->getTool($index), $user);
+  }
+  
+  //This function attends a request from a user
+  public function attendRequest($request, $user) {
+    //echo "Answering to $request <br />";
+    $controller = new MITSController();
+    return $controller->processQuery($request, $user);
   }
 }

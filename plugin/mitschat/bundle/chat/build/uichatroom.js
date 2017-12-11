@@ -176,7 +176,7 @@ define(['jquery', 'jqueryui', 'bundle/io/build/iolib'], function($, jui, io) {
                     var msg = $.trim($(this).val());
                     self.options.boxManager.addMsg(fname, msg);
                     $(this).val('');
-                    $.getJSON("/GPITS/gpitsservice.php?msg=" + msg + "&user=" + id, function(data) {
+                    $.getJSON("/mcampos/GPITS/gpitsservice.php?msg=" + msg + "&user=" + id, function(data) {
                       setTimeout(function() {
                         self.options.boxManager.addMsg('Tutor', data.respuesta);
                         //$(this).val('');
@@ -184,28 +184,6 @@ define(['jquery', 'jqueryui', 'bundle/io/build/iolib'], function($, jui, io) {
                       }, 1000);
                     });
                     //Add msg to chatroom
-                    /*if(sessionStorage.getItem('chatroom') != null){
-                        var chatroom = JSON.parse(sessionStorage.getItem('chatroom'));
-                        chatroom.push({ userid:io.cfg.userid, name:io.cfg.userobj.name, msg: msg, time: time});
-                        sessionStorage.setItem('chatroom',JSON.stringify(chatroom));
-                    } else {
-                        sessionStorage.setItem('chatroom', JSON.stringify([{ userid:io.cfg.userid, name:io.cfg.userobj.name, msg: msg, time: time}]));
-                    }*/
-
-                    /*app = new apiai.App();
-                    app.open();
-                    app.sendJson(msg);
-                    app.apiAi.onResults = function (data) {
-                        var ms = JSON.stringify(data);
-                        self.options.boxManager.addMsg(io.cfg.userobj.name, ms);
-                        if(sessionStorage.getItem('chatroom') != null){
-                            var chatroom = JSON.parse(sessionStorage.getItem('chatroom'));
-                            chatroom.push({ userid:io.cfg.userid, name:io.cfg.userobj.name, msg: ms, time: time});
-                            sessionStorage.setItem('chatroom',JSON.stringify(chatroom));
-                        } else {
-                            sessionStorage.setItem('chatroom', JSON.stringify([{ userid:io.cfg.userid, name:io.cfg.userobj.name, msg: ms, time: time}]));
-                        }
-                    }//Fin del on results*/
 
                 }//Fin del enter
             })
@@ -235,6 +213,19 @@ define(['jquery', 'jqueryui', 'bundle/io/build/iolib'], function($, jui, io) {
             if (!self.options.hidden) {
                 uiChatbox.show();
             }
+
+            if (window.location.href.indexOf("notifyeditingon=1") > -1) {
+                //this.toggleBox();
+                //alert("Editando el curso. Mandar recomendación");
+                //options.boxManager.toggleBox();
+                $.getJSON("/mcampos/GPITS/gpitsservice.php?&user=" + id + "&r=1", function (data) {
+                    setTimeout(function () {
+                        self.options.boxManager.addMsg('Tutor', 'Recomendación: ' + data.respuesta);
+                        //$(this).val('');
+                        console.log('Lista la recomendación');
+                    }, 1000);
+                });
+            }//Fin del if
         },
 
         _setOption: function(option, value) {

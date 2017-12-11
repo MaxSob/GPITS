@@ -122,8 +122,8 @@ abstract class Response {
 }
 
 abstract class Tutor {
-  public abstract function decideFedBack();
-  public abstract function attendRequest($request);
+  public abstract function decideFedBack($user);
+  public abstract function attendRequest($request, $user);
 }
 
 /*User profiles classes*/
