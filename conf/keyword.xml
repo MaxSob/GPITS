@@ -105,7 +105,10 @@
 
   <property>
   <key>herramientas</key>
-  <sinonym>que herramientas conoces</sinonym>
-  <sinonym>herramientas manejas</sinonym>
+    <sinonyms>
+      <sinonym>que herramientas conoces</sinonym>
+      <sinonym>herramientas manejas</sinonym>
+      <sinonym>herramientas</sinonym>
+    </sinonyms>
   </property>
 </data>
