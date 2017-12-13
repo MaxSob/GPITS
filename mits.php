@@ -121,10 +121,10 @@ class MITSEntityExtractor extends EntityExtractor {
 
 class MITSController extends ChatBotController {
 
-  public function processQuery($query, $user) {
+  public function processQuery($query_r, $user) {
     $mm = new MITSMemoryManager();
     $context = $mm->getUserContext($user);
-    $query = $this->constructQuery($query);
+    $query = $this->constructQuery($query_r);
     //var_dump($query);
     $update = true;
 
@@ -152,8 +152,13 @@ class MITSController extends ChatBotController {
 
     $driver = new XmlDriver();
     $data = $driver->runQuery($query);
-    if($data == null || $data == '')
-      $data = "Puedes reformular la pregunta?";
+    if($data == null || $data == '') {
+      $query = $this->constructQuery($query_r . 'conversation');
+      $data = $driver->runQuery($query);
+      if($data == null || $data == '')
+        $data = "¿Puedes reformular la pregunta?";
+    }
+      
 
     //Update the interactions
     $mm->addInteraction($user, $query->raw_data, $data);

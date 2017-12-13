@@ -26,6 +26,8 @@
     <sinonyms>
       <sinonym>QUE ES</sinonym>
       <sinonym>DE QUE VA</sinonym>
+       <sinonym>DESCRIBEME</sinonym>
+        <sinonym>DESCRIPCION</sinonym>
     </sinonyms>
   </property>
 
@@ -46,6 +48,7 @@
       <sinonym>COMO SE USA</sinonym>
       <sinonym>COMO SE UTILIZA</sinonym>
       <sinonym>COMO LO USO</sinonym>
+       <sinonym>COMO LO DEBO USAR</sinonym>
     </sinonyms>
   </property>
 
@@ -98,5 +101,11 @@
       <sinonym>Ya me aburrí</sinonym>
       <sinonym>Puedes decir otras cosas</sinonym>
     </sinonyms>
+  </property>
+
+  <property>
+  <key>herramientas</key>
+  <sinonym>que herramientas conoces</sinonym>
+  <sinonym>herramientas manejas</sinonym>
   </property>
 </data>
