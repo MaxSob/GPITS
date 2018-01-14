@@ -28,11 +28,16 @@ Los recursos son tecnologías o artefactos que, utilizando diferentes programas,
 |parse|<![CDATA[<br />]]>
 Los materiales pueden estar elaborados o ser construidos por el profesor tomando en cuenta la secuencia didáctica. Algunos ejemplos son: materiales gráficos, audiovisuales, digitales, compendios, guías didácticas, cuestionarios, mapas conceptuales.
 </recursos>
-<como_funciona>El Ada es x</como_funciona>
-<para_que_se_usa>Las adas se usan de forma y
+<como_funciona>
+Las actividades de aprendizaje se planean considerando la(s) estrategia(s) de enseñanza y aprendizaje seleccionada(s) y su descripción debe incluir cuatro elementos:
+|parse|<![CDATA[<br />]]>
+Forma de trabajo, acción, producto y contenido
+</como_funciona>
+<para_que_se_usa>
+Las actividades de aprendizaje son las acciones concretas que realizará el estudiante para lograr el resultado de aprendizaje y que en conjunto con otras conducirán al desarrollo de las competencias de la asignatura.
 </para_que_se_usa>
 <ventajas>
-ventajas del ada
+Las actividades de aprendizaje son las acciones concretas que realizará el estudiante para lograr el resultado de aprendizaje y que en conjunto con otras conducirán al desarrollo de las competencias de la asignatura.
 </ventajas>
 <ejemplo>Este es un ejemplo de ada |parse|<![CDATA[<img src="/mcampos/GPITS/conf/images/ada_example.png">]]>|parse|<![CDATA[<a target="_blank" href="/mcampos/GPITS/conf/images/ada_example.png">Descárgalo aquí</a>]]></ejemplo>
 </tool>
