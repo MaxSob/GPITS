@@ -18,6 +18,7 @@
       <sinonym>TAREA</sinonym>
       <sinonym>WIKI</sinonym>
       <sinonym>CONVERSATION</sinonym>
+      <sinonym>ADA</sinonym>
     </sinonyms>
   </property>
 
@@ -31,6 +32,99 @@
     </sinonyms>
   </property>
 
+
+  <property>
+    <key>filtros_adicionales</key>
+    <sinonyms>
+      <sinonym>FILTROS</sinonym>
+      <sinonym>FILTROS ADICIONALES</sinonym>
+    </sinonyms>
+  </property>
+
+
+  <property>
+    <key>envios_desde</key>
+    <sinonyms>
+      <sinonym>FECHA DE ENVIO</sinonym>
+      <sinonym>DESDE CUANDO SE PUEDE ENVIAR</sinonym>
+      <sinonym>DESDE QUE FECHA SE PUEDE ENVIAR</sinonym>
+    </sinonyms>
+  </property>
+
+
+  <property>
+    <key>fecha_entrega</key>
+    <sinonyms>
+      <sinonym>FECHA DE ENTREGA</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>fecha_corte</key>
+    <sinonyms>
+      <sinonym>FECHA DE CORTE</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>recordarme_calificar</key>
+    <sinonyms>
+      <sinonym>RECORDARME CALIFICAR</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>tipos_envio</key>
+    <sinonyms>
+      <sinonym>QUE TIPOS DE ENVIO HAY</sinonym>
+      <sinonym>TIPOS DE ENVIO</sinonym>
+      <sinonym>TEXTO EN LINEA</sinonym>
+      <sinonym>ENVIO DE ARCHIVO</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>limite_palabras</key>
+    <sinonyms>
+      <sinonym>LIMITE DE PALABRAS</sinonym>
+      <sinonym>MAXIMO DE PALABRAS</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>maximo_archivos</key>
+    <sinonyms>
+      <sinonym>LIMITE DE ARCHIVOS</sinonym>
+      <sinonym>MAXIMO DE ARCHIVOS</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>tamanio_maximo_archivo</key>
+    <sinonyms>
+      <sinonym>LIMITE DE TAMANO DE ARCHIVOS</sinonym>
+      <sinonym>TAMANO MAXIMO DE ARCHIVOS</sinonym>
+      <sinonym>MAXIMO TAMANO DE ARCHIVOS</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>tipos_archivo</key>
+    <sinonyms>
+      <sinonym>TIPOS DE ARCHIVOS</sinonym>
+      <sinonym>EXTENSIONES DE ARCHIVOS</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>comentarios_retro</key>
+    <sinonyms>
+      <sinonym>COMENTARIOS RETROALIMENTACION</sinonym>
+      <sinonym>COMENTARIOS DE RETROALIMENTACION</sinonym>
+      <sinonym>RETROALIMENTACION</sinonym>
+    </sinonyms>
+  </property>
+
   <property>
     <key>para_que_se_usa</key>
     <sinonyms>
@@ -38,6 +132,16 @@
       <sinonym>PARA QUE SE USA</sinonym>
       <sinonym>QUE HACE</sinonym>
       <sinonym>DE QUE SIRVE</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>partes</key>
+    <sinonyms>
+      <sinonym>DE QUE SE COMPONE</sinonym>
+      <sinonym>QUE PARTES TIENE</sinonym>
+      <sinonym>CUALES SON SUS PARTES</sinonym>
+      <sinonym>QUE SECCIONES TIENE</sinonym>
     </sinonyms>
   </property>
 

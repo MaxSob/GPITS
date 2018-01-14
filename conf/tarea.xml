@@ -16,5 +16,42 @@ Los estudiantes pueden enviar cualquier contenido digital (archivos), tal como d
 <ventajas>
   Cuando se revisan las tareas, los profesores pueden dejar comentarios de retroalimentación y subir archivos; por ejemplo documentos de alumnos con anotaciones del profesor, o comentarios grabados en audio. Las tareas pueden calificarse empleando una escala numérica o escala a la medida, o un método de calificación avanzado como rúbrica. Las calificaciones finales se anotan en el libro de calificaciones.
 </ventajas>
+<filtros_adicionales>
+Pueden añadirse filtros adicionales para usar en la tarea, tales como plantillas de respuesta. Los enlaces para descarga de los archivos se mostrarán en la página de la tarea, debajo de la descripción.
+</filtros_adicionales>
+<envios_desde>
+Si se habilita la feha de envío, los estudiantes no podrán envíar nada antes de esta fecha. Si se deshabilita, los estudiantes podrán empezar a enviar inmediatamente.
+</envios_desde>
+<fecha_entrega>
+La fecha de entrega es la fecha cuando se debería de entregar la tarea. Los envíos seguirán siendo permitidos aún después de esta fecha de entrega, pero cualquier envío mandado después de esta fecha será marcado como 'retrasado'. Para evitar que se puedan enviar tareas depués de una cierta fecha debe configurar la fecha de corte.     
+</fecha_entrega>
+<fecha_corte>
+Si se configura la fecha de corte, la tarea no aceptará envíos después de esta fecha si no hubiera extensiones.
+</fecha_corte>
+<recordarme_calificar>
+La fecha esperada en la que debería de haberse completado la calificación de los envíos. Esta fecha es usada para priorizar las notificaciones del Tablero para los profesores.
+</recordarme_calificar>
+<tipos_envio>
+La tarea tiene dos tipos de envío:
+Texto en línea: 
+Si se habilita, los estudiantes pueden escribir texto enriquecido directamente en un campo editor (de Moodle) para su envío.
+Envíos de archivo:
+Si se habilita, los estudiantes pueden subir uno o más archivos a modo de envío.
+</tipos_envio>
+<limite_palabras>
+Si están habilitados los envíos de texto en-línea, este es el número máximo de palabras que cada estudiante tendrá permitido enviar.
+</limite_palabras>
+<maximo_archivos>
+Si se habilitan los envíos de archivos, cada estudiante podrá subir hasta este máximo número de archivos  para su envío.
+</maximo_archivos>
+<tamanio_maximo_archivo>
+Los archivos subidos por estudiantes pueden ser hasta de este tamaño
+</tamanio_maximo_archivo>
+<tipos_archivo>
+Los tipos de archivos aceptados pueden restringirse al ingresar una lista de extensiones de archivos. Si el campo se deja vacío entonces todos los tipos de archivo son permitidos.
+</tipos_archivo>
+<comentarios_retro>
+Si se habilita, quien califique puede dejar comentarios de retroalimentación para cada envío.
+</comentarios_retro>
 <ejemplo>/files/ejemplo_tarea.pdf</ejemplo>
 </tool>

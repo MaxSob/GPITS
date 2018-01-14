@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <tool>
-<nombre>Retroalimentación</nombre>
+<nombre>Retro</nombre>
 <descripcion>
 El módulo de actividad de Retroalimentación le permite al profesor crear encuestas personalizadas para colectar retroalimentación de los participantes, empleando una variedad de tipos de preguntas que incluyen opción múltiple, falso/verdadero, o respuesta de texto.
 </descripcion>

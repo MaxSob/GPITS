@@ -218,7 +218,7 @@ ui-memblist-usr
 }
 .ui-chatroom-titlebar {
     padding: 3px 3px 3px 3px;
-    height: 20px;
+    height: 30px;
 }
 
 .ui-chatroom-content {
@@ -428,6 +428,10 @@ ui-memblist-usr
 .ui-widget-content .ui-corner-all{
     border: none;
     /* border-radius: 0;*/
+}
+
+.ui-widget-content {
+  height: 300px;
 }
 /*.ui-widget-header{
   font-weight: normal;

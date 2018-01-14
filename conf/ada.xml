@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<tool>
+<nombre>ADA</nombre>
+<nombre>Actividad de Aprendizaje</nombre>
+<descripcion>Una actividad de aprendizaje es X</descripcion>
+<partes>Las adas se componen de 1,2 y 3</partes>
+<como_funciona>El Ada es x</como_funciona>
+<para_que_se_usa>Las adas se usan de forma y
+</para_que_se_usa>
+<ventajas>
+ventajas del ada
+</ventajas>
+<ejemplo>Este es un ejemplo de ada /files/ejemplo_foro.pdf</ejemplo>
+</tool>
