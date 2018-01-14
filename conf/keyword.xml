@@ -83,6 +83,23 @@
   </property>
 
   <property>
+    <key>tipos_ada</key>
+    <sinonyms>
+      <sinonym>QUE TIPOS DE ACTIVIDADES DE APRENDIZAJE HAY</sinonym>
+      <sinonym>TIPOS DE ACTIVIDADES DE APRENDIZAJE</sinonym>
+      <sinonym>TIPOS DE ADA</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>planeacion_ada</key>
+    <sinonyms>
+      <sinonym>COMO SE PLANEAN</sinonym>
+      <sinonym>PLANEACION</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
     <key>limite_palabras</key>
     <sinonyms>
       <sinonym>LIMITE DE PALABRAS</sinonym>
@@ -334,6 +351,7 @@
     <sinonyms>
       <sinonym>DE QUE SE COMPONE</sinonym>
       <sinonym>QUE PARTES TIENE</sinonym>
+      <sinonym>QUE ELEMENTOS TIENE</sinonym>
       <sinonym>CUALES SON SUS PARTES</sinonym>
       <sinonym>QUE SECCIONES TIENE</sinonym>
     </sinonyms>
@@ -347,6 +365,24 @@
       <sinonym>COMO SE UTILIZA</sinonym>
       <sinonym>COMO LO USO</sinonym>
        <sinonym>COMO LO DEBO USAR</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>recursos</key>
+    <sinonyms>
+      <sinonym>RECURSOS Y MATERIALES</sinonym>
+      <sinonym>RECURSOS</sinonym>
+      <sinonym>MATERIALES</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>ejemplo</key>
+    <sinonyms>
+      <sinonym>DAME UN EJEMPLO</sinonym>
+      <sinonym>POR EJEMPLO</sinonym>
+      <sinonym>UN EJEMPLO</sinonym>
     </sinonyms>
   </property>
 

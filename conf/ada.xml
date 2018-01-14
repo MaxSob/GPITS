@@ -2,13 +2,37 @@
 <tool>
 <nombre>ADA</nombre>
 <nombre>Actividad de Aprendizaje</nombre>
-<descripcion>Una actividad de aprendizaje es X</descripcion>
-<partes>Las adas se componen de 1,2 y 3</partes>
+<descripcion>
+Las actividades de aprendizaje son las acciones concretas que realizará el estudiante para lograr el resultado de aprendizaje y que en conjunto con otras conducirán al desarrollo de las competencias de al asignatura
+</descripcion>
+<tipos_ada>
+Las actividades de aprendizaje pueden ser presenciales, no presenciales o mixtas y deben incluirse las horas que se requieran para su realización en el apartado correspondiente.
+</tipos_ada>
+<planeacion_ada>
+Las actividades de aprendizaje se planean considerando la(s) estrategia(s) de enseñanza y aprendizaje seleccionada(s) y su descripción debe incluir cuatro elementos:
+Forma de trabajo, acción, producto y contenido
+</planeacion_ada>
+<partes>
+Las actividades de aprendizaje se componen de los siguientes elementos:
+|parse|<![CDATA[<br />]]>
+Forma de trabajo: en equipo, de manera individual, en binas o en tríos, por citar algunas formas.
+|parse|<![CDATA[<br />]]>
+Acción: mediante el uso de verbos activos escritos en infinitivo, por ejemplo, describir, elaborar.
+|parse|<![CDATA[<br />]]>
+Producto: es la evidencia del trabajo que el estudiante realiza en función de la(s) estrategia(s) de enseñanza y aprendizaje seleccionada(s) por el profesor
+|parse|<![CDATA[<br />]]>
+Contenido: referente al desagregado de contenidos planteados en las unidades de la secuencia didáctica.
+</partes>
+<recursos>
+Los recursos son tecnologías o artefactos que, utilizando diferentes programas, software, sitios o plataformas, se incorporan para coadyuvar la construcción y reconstrucción del conocimiento.
+|parse|<![CDATA[<br />]]>
+Los materiales pueden estar elaborados o ser construidos por el profesor tomando en cuenta la secuencia didáctica. Algunos ejemplos son: materiales gráficos, audiovisuales, digitales, compendios, guías didácticas, cuestionarios, mapas conceptuales.
+</recursos>
 <como_funciona>El Ada es x</como_funciona>
 <para_que_se_usa>Las adas se usan de forma y
 </para_que_se_usa>
 <ventajas>
 ventajas del ada
 </ventajas>
-<ejemplo>Este es un ejemplo de ada /files/ejemplo_foro.pdf</ejemplo>
+<ejemplo>Este es un ejemplo de ada |parse|<![CDATA[<img src="/mcampos/GPITS/conf/images/ada_example.png">]]>|parse|<![CDATA[<a target="_blank" href="/mcampos/GPITS/conf/images/ada_example.png">Descárgalo aquí</a>]]></ejemplo>
 </tool>

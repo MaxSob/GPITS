@@ -57,6 +57,13 @@ define(['jquery', 'jqueryui', 'bundle/io/build/iolib'], function($, jui, io) {
                         self.highlightBox();
                     }
                 },
+                addHTML: function(html) {
+                  var self = this;
+                  var box = self.elem.uiChatboxLog;
+                  var e = document.createElement('div');
+                  e.innerHTML = html;
+                  box.append(e);
+                },
                 highlightBox: function() {
                     var self = this;
                     self.elem.uiChatboxTitlebar.addClass("ui-state-highlight");
@@ -178,9 +185,23 @@ define(['jquery', 'jqueryui', 'bundle/io/build/iolib'], function($, jui, io) {
                     $(this).val('');
                     $.getJSON("/mcampos/GPITS/gpitsservice.php?msg=" + msg + "&user=" + id, function(data) {
                       setTimeout(function() {
-                        self.options.boxManager.addMsg('Tutor', data.respuesta);
+                        //var contentText = $($.parseXML(xml)).find("html").text();
+                        var addcontent = data.respuesta.split("|parse|");
+                        for(var i=0; i< addcontent.length; i++) {
+                          var chunk = addcontent[i];
+                          /*chunk = chunk.replace("<![CDATA[", "");
+                          chunk = chunk.replace("]]>", "");*/
+                          var stripped = chunk.replace(/(<([^>]+)>)/ig,"");
+                          if(stripped == addcontent[i]) {
+                            self.options.boxManager.addMsg('Tutor', stripped);
+                            console.log("Msg added...");
+                          } else {
+                            self.options.boxManager.addHTML(addcontent[i]);
+                            console.log("HTML added...");
+                          }
+                        }//End for
                         //$(this).val('');
-                        console.log('Listo');
+                        console.log('Listo amigo');
                       }, 1000);
                     });
                     //Add msg to chatroom

@@ -62,14 +62,43 @@ define(['jquery', 'jqueryui', 'build/lib', 'bundle/io/build/iolib'], function($,
                         self.highlightBox();
                     }
                 },
-                highlightBox: function() {
-                    //this.elem.uiChatbox.addClass("ui-state-highlight");
+                addHTML: function(html) {
                     var self = this;
-                    //self.elem.uiChatboxTitlebar.effect("highlight", {}, 300);
-                    /*self.elem.uiChatbox.effect("bounce", {times:1}, 300, function(){
+                    var box = self.elem.uiChatboxLog;
+                    var e = document.createElement('div');
+                    e.appendChild(html);
+                    box.append(e);
+
+                    /*var systemMessage = false;
+
+                    if (peer) {
+                        var peerName = document.createElement("b");
+                        $(peerName).text(peer + ": ");
+                        e.appendChild(peerName);
+                    } else {
+                        systemMessage = true;
+                    }
+
+                    var msgElement = document.createElement(systemMessage ? "i" : "span");
+                    $(msgElement).text(msg);
+                    e.appendChild(msgElement);
+                    $(e).addClass("ui-chatbox-msg");
+                    $(e).fadeIn();
+                    self._scrollToBottom();*/
+
+                    if (!self.elem.uiChatboxTitlebar.hasClass("ui-state-focus") && !self.highlightLock) {
+                        self.highlightLock = true;
+                        self.highlightBox();
+                    }
+                },
+                highlightBox: function() {
+                    this.elem.uiChatbox.addClass("ui-state-highlight");
+                    var self = this;
+                    self.elem.uiChatboxTitlebar.effect("highlight", {}, 300);
+                    self.elem.uiChatbox.effect("bounce", {times:1}, 300, function(){
                         self.highlightLock = false;
                         self._scrollToBottom();
-                    });*/
+                    });
                 },
                 toggleBox: function() {
                     this.elem.uiChatbox.toggle();
@@ -214,7 +243,7 @@ define(['jquery', 'jqueryui', 'build/lib', 'bundle/io/build/iolib'], function($,
                         var time = new Date().getTime();
                         mitsstorage[k].push({ userid:io.cfg.userid, name:io.cfg.userobj.name , msg: msg, time: time });
                     }
-                    
+
                     return false;
                 }
             })
