@@ -23,7 +23,7 @@ Pueden añadirse filtros adicionales para usar en la tarea, tales como plantilla
 Si se habilita la feha de envío, los estudiantes no podrán envíar nada antes de esta fecha. Si se deshabilita, los estudiantes podrán empezar a enviar inmediatamente.
 </envios_desde>
 <fecha_entrega>
-La fecha de entrega es la fecha cuando se debería de entregar la tarea. Los envíos seguirán siendo permitidos aún después de esta fecha de entrega, pero cualquier envío mandado después de esta fecha será marcado como 'retrasado'. Para evitar que se puedan enviar tareas depués de una cierta fecha debe configurar la fecha de corte.     
+La fecha de entrega es la fecha cuando se debería de entregar la tarea. Los envíos seguirán siendo permitidos aún después de esta fecha de entrega, pero cualquier envío mandado después de esta fecha será marcado como 'retrasado'. Para evitar que se puedan enviar tareas depués de una cierta fecha debe configurar la fecha de corte.
 </fecha_entrega>
 <fecha_corte>
 Si se configura la fecha de corte, la tarea no aceptará envíos después de esta fecha si no hubiera extensiones.
@@ -33,7 +33,7 @@ La fecha esperada en la que debería de haberse completado la calificación de l
 </recordarme_calificar>
 <tipos_envio>
 La tarea tiene dos tipos de envío:
-Texto en línea: 
+Texto en línea:
 Si se habilita, los estudiantes pueden escribir texto enriquecido directamente en un campo editor (de Moodle) para su envío.
 Envíos de archivo:
 Si se habilita, los estudiantes pueden subir uno o más archivos a modo de envío.
@@ -53,5 +53,100 @@ Los tipos de archivos aceptados pueden restringirse al ingresar una lista de ext
 <comentarios_retro>
 Si se habilita, quien califique puede dejar comentarios de retroalimentación para cada envío.
 </comentarios_retro>
+<hoja_calificadora>
+Si se habilita, el maestro podrá descargar y subir una hoja de trabajo con calificaciones de estudiantes al calificar las tareas.
+</hoja_calificadora>
+<archivos_retro>
+Si se habilita, el profesor podrá subir archivos con retroalimentación al calificar las tareas. Estos archivos pueden ser, pero no están limitados a, envíos corregidos de estudiantes, documentos con comentarios, o retroalimentación en audio hablado.
+</archivos_retro>
+<comentar_en_linea>
+Si se habilita, el texto del envío será copiado al campo del comentario de retroalimentación al calificar, haciendo más fácil el comentar en línea (tal vez utilizando un color diferente), o el editar el texto original.
+</comentar_en_linea>
+<requerir_boton_enviar>
+Si está habilitado, los estudiantes tendrán que pulsar un botón de Entrega para declarar que es su entrega definitiva. Esto permite que los estudiantes puedan tener una versión borrador de su entrega en el sistema. Si esta configuración se cambia de "no" a "si" después de que los estudiantes ya hayan enviado sus trabajos, estos envíos serán considerados como finales.
+</requerir_boton_enviar>
+<requerir_declaratoria>
+Requerir que los estudiantes acepten la declaratoria para el envío para todos los envíos para esta tarea.
+
+Por defecto es 'Esta tarea es mi propio trabajo, excepto en donde he reconocido el uso de los trabajos de otras personas'
+
+Podría añadirse además ... "El alumno que haya prestado o recibido ayuda fraudulenta en las pruebas de aprovechamiento, será suspendido hasta por un año, sin perjuicio de la nulidad del examen sustentado" (artículo 97, fracción II, del Estatuto General de la UNAM), o su equivalente en la normatividad local ...
+</requerir_declaratoria>
+<intentos_reabiertos>
+Determina cómo se reabren los envíos de los estudiantes. Las opciones disponibles son:
+
+Nunca- El envío del estudiante no puede ser reabierto.
+Manualmente -  El envío del estudiante puede ser reabierto por un maestro.
+Automáticamente hasta pasar - El envío del estudiante es reabierto automáticamente, hasta que el estudiante alcance la calificación necesaria para pasar (aprobar), que está configurada en (la sección sobre configuración de ) el libro de calificaciones para esta tarea.
+</intentos_reabiertos>
+<intentos_maximos>
+El número máximo de intentos de envíos que puede hacer un estudiante. Después de este número de intentos, los envíos del estudiante no se podrán reabrir.
+</intentos_maximos>
+<envio_grupo>
+Si se habilita, los estudiantes serán divididos en grupos basados en el conjunto de grupos por defecto o un agrupamiento a la medida. Un envío en grupo estará compartido entre los miembros del grupo y todos los miembros del grupo verán los cambios de todos ellos al envío.
+</envio_grupo>
+<aviso_calificadores>
+Si se habilita, los (profesores) calificadores reciben un mensaje cuando un estudiante envía una tarea, anticipadamente, a tiempo y retrasada. Los métodos de mensaje son configurables.
+</aviso_calificadores>
+<aviso_entrega_fuera_plazo>
+Si está habilitado, los evaluadores (normalmente profesores) reciben un mensaje cuando un estudiante realiza una entrega a la tarea fuera de plazo . Se pueden configurar los métodos de mensajería.
+</aviso_entrega_fuera_plazo>
+<aviso_estudiantes>
+Establecer el valor por defecto para la casilla de verificación "Notificar a estudiantes" en el formato de evaluación.
+</aviso_estudiantes>
+<tipo_calificacion>
+Seleccione el tipo de calificación usado para esta actividad Si se elige "escala", entonces Usted puede escoger la escala dentro  del menú desplegable de  "escala". Si se usa calificación por "puntaje" entonces Usted puede escribir la máxima calificación disponible para esta actividad.
+</tipo_calificacion>
+<metodo_calificacion>
+Elija el método de calificación avanzada que se debe utilizar para calcular las calificaciones en este contexto.
+Para deshabilitar la calificación avanzada y volver al método  de calificación por defecto, elija 'Calificación simple directa'.
+</metodo_calificacion>
+<categoria_calificacion>
+Esta configuración controla la categoría en donde se colocan las calificaciones de la actividad dentro del libro de calificaciones.
+</categoria_calificacion>
+<calificacion_aprobatoria>
+Esta configuración determina la calificación mínima requerida para pasar. El valor se usa en finalización de actividad y de curso y en el libro de calificaciones, donde las calificaciones aprobatorias están resaltadas en verde y las reprobatorias en rojo.
+</calificacion_aprobatoria>
+<calificacion_ciega>
+La calificación ciega oculta la identidad de los estudiantes a los evaluadores. Las configuraciones de calificación ciega se bloquearán en cuanto  se haga  un envío o se ponga una calificación con respecto a esta tarea.
+</calificacion_ciega>
+<flujograma_calificador>
+Si se habilita, las calificaciones seguirán una serie de etapas del flujograma antes de que sean liberadas a los estudiantes. Ésto permite que haya varias rondas de calificación y permite que todas las calificaciones se liberen para todos los estudiantes a un mismo tiempo.
+</flujograma_calificador>
+<usar_asignacion_calificador>
+Si se habilita al mismo tiempo que  el flujograma calificador, permite que los sujetos calificadores sean asignados a estudiantes individuales.
+</usar_asignacion_calificador>
+<disponibilidad>
+Si la disponibilidad se configura a 'Mostrar en página de curso', la actividad o el recurso está disponible para estudiates (sujeto a cualesquier restricciones de acceso que puedan configurarse).
+Si la disponibilidad se configura a 'Ocultar a estudiantes', la actividad o el recurso solamente está disponible para usuarios con permiso para ver actividades ocultas (por defecto, usuarios con el rol de profesor o  profesor sin derechos de edición).
+</disponibilidad>
+<numero_id>
+El número ID proporciona una forma de identificar la actividad a fin de poder calcular la calificación. Si la actividad no está incluida en ningún cálculo de calificación, el campo Número ID puede dejarse en blanco. El Número ID puede asimismo ajustarse en la página de edición del libro de calificaciones, si bien únicamente puede editarse en la página de actualización de la actividad.
+</numero_id>
+<modo_grupo>
+  Esta configuración tiene 3 opciones:
+  Sin grupos
+  Grupos separados - Cada miembro del grupo solamente puede ver a su propio grupo, los demás son invisibles
+  Grupos visible - Cada miembro del grupo trabaja en su propio grupo, pero también puede ver a los otros grupos
+  El modo de grupo definido a nivel del curso es el modo por defecto para todas las actividades dentro del curso. Cada actividad que soporta grupos también puede definir su propio modo de grupo, aunque si se forza el modo de grupo a nivel del curso, la configuración del modo de grupo para cada actividad es ignorada.
+</modo_grupo>
+<agrupamiento>
+  Un agrupamiento es un conjunto de grupos dentro de un curso.
+  Si se selecciona un agrupamiento, los usuarios asignados a los grupos dentro del agrupamiento podrán trabajar juntos.
+  El modo de grupo debe estar ajustado a grupos visibles o separados
+</agrupamiento>
+<seguimiento_finalizacion>
+  Si se activa esta opción, se rastrea el grado de finalización de cualquier actividad, bien manual, bien automáticamente, basándose en determinadas condiciones. Si se desea, se pueden fijar múltiples condiciones. Si se hace así, la actividad únicamente se considerará completa si se cumplen TODAS las condiciones.
+  Una marca (paloma) al lado del nombre de la actividad en la página del curso indica cuándo la actividad está completa.
+</seguimiento_finalizacion>
+<requerir_calificacion>
+Si se activa, la actividad se considera finalizada cuando un estudiante recibe una calificación. Los iconos Aprobar y Suspender se muestran si se ha establecido una calificación de aprobado para la actividad
+</requerir_calificacion>
+<finalizar_en>
+Esta opción especifica la fecha en que se espera que la actividad esté finalizada.
+</finalizar_en>
+<competencias>
+Competencias del curso enlazadas a la actividad
+</competencias>
 <ejemplo>/files/ejemplo_tarea.pdf</ejemplo>
 </tool>

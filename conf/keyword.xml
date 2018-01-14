@@ -12,7 +12,6 @@
       <sinonym>FORO</sinonym>
       <sinonym>GLOSARIO</sinonym>
       <sinonym>LECCION</sinonym>
-      <sinonym>RETROALIMENTACION</sinonym>
       <sinonym>SCORM</sinonym>
       <sinonym>TALLER</sinonym>
       <sinonym>TAREA</sinonym>
@@ -122,6 +121,201 @@
       <sinonym>COMENTARIOS RETROALIMENTACION</sinonym>
       <sinonym>COMENTARIOS DE RETROALIMENTACION</sinonym>
       <sinonym>RETROALIMENTACION</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>archivos_retro</key>
+    <sinonyms>
+      <sinonym>ARCHIVOS DE RETROALIMENTACION</sinonym>
+      <sinonym>RETROALIMENTACION MEDIANTE ARCHIVOS</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>requerir_boton_enviar</key>
+    <sinonyms>
+      <sinonym>REQUERIR BOTON ENVIAR</sinonym>
+      <sinonym>REQUERIR QUE LOS ESTUDIANTES OPRIMAN EL BOTON ENVIAR</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>requerir_declaratoria</key>
+    <sinonyms>
+      <sinonym>REQUERIR DECLARATORIA</sinonym>
+      <sinonym>REQUERIR ACEPTAR DECLARATORIA</sinonym>
+      <sinonym>REQUERIR QUE LOS ESTUDIANTES ACEPTEN LA DECLARATORIA</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>intentos_reabiertos</key>
+    <sinonyms>
+      <sinonym>INTENTOS REABIERTOS</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>intentos_reabiertos</key>
+    <sinonyms>
+      <sinonym>INTENTOS MAXIMOS</sinonym>
+      <sinonym>MAXIMO NUMERO DE INTENTOS</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>envio_grupo</key>
+    <sinonyms>
+      <sinonym>ENVIO EN GRUPO</sinonym>
+      <sinonym>GRUPOS</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>aviso_calificadores</key>
+    <sinonyms>
+      <sinonym>ENVIAR AVISO A PROFESORES CALIFICADORES</sinonym>
+      <sinonym>ENVIAR AVISO A CALIFICADORES</sinonym>
+      <sinonym>ENVIAR AVISO A PROFESORES</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>aviso_entrega_fuera_plazo</key>
+    <sinonyms>
+      <sinonym>ENVIAR AVISO DE ENTREGA FUERA DE PLAZO</sinonym>
+      <sinonym>AVISO DE ENTREGA FUERA DE PLAZO</sinonym>
+      <sinonym>AVISO DE ENTREGA RETRASADA</sinonym>
+      <sinonym>AVISAR SI HAY ENTREGA RETRASADA</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>aviso_estudiantes</key>
+    <sinonyms>
+      <sinonym>NOTIFICAR ESTUDIANTES</sinonym>
+      <sinonym>AJUSTE CASILLA NOTIFICAR ESTUDIANTES</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>tipo_calificacion</key>
+    <sinonyms>
+      <sinonym>TIPO DE CALIFICACION</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>metodo_calificacion</key>
+    <sinonyms>
+      <sinonym>METODO DE CALIFICACION</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>categoria_calificacion</key>
+    <sinonyms>
+      <sinonym>CATEGORIA DE CALIFICACION</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>calificacion_aprobatoria</key>
+    <sinonyms>
+      <sinonym>CALIFICACION APROBATORIA</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>calificacion_ciega</key>
+    <sinonyms>
+      <sinonym>CALIFICACION CIEGA</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>flujograma_calificador</key>
+    <sinonyms>
+      <sinonym>FLUJOGRAMA CALIFICADOR</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>usar_asignacion_calificador</key>
+    <sinonyms>
+      <sinonym>ASIGNACION CALIFICADOR</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>disponibilidad</key>
+    <sinonyms>
+      <sinonym>DISPONIBILIDAD</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>comentar_en_linea</key>
+    <sinonyms>
+      <sinonym>COMENTAR EN LINEA</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>hoja_calificadora</key>
+    <sinonyms>
+      <sinonym>HOJA CALIFICADORA FUERA DE LINEA</sinonym>
+      <sinonym>HOJA CALIFICADORA</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>numero_id</key>
+    <sinonyms>
+      <sinonym>NUMERO ID</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>modo_grupo</key>
+    <sinonyms>
+      <sinonym>MODO DE GRUPO</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>agrupamiento</key>
+    <sinonyms>
+      <sinonym>AGRUPAMIENTO</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>seguimiento_finalizacion</key>
+    <sinonyms>
+      <sinonym>SEGUIMIENTO DE FINALIZACION</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>requerir_calificacion</key>
+    <sinonyms>
+      <sinonym>REQUERIR CALIFICACION</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>finalizar_en</key>
+    <sinonyms>
+      <sinonym>FINALIZAR EN</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>competencias</key>
+    <sinonyms>
+      <sinonym>COMPETENCIAS</sinonym>
     </sinonyms>
   </property>
 

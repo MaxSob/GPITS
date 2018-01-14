@@ -27,7 +27,7 @@
 
 .ui-chatbox-log {
     padding: 3px 3px 3px 3px;
-    height: 175px;
+    height: 300px;
    overflow-y: auto;
 }
 
@@ -430,9 +430,6 @@ ui-memblist-usr
     /* border-radius: 0;*/
 }
 
-.ui-widget-content {
-  height: 300px;
-}
 /*.ui-widget-header{
   font-weight: normal;
   text-transform: capitalize;
