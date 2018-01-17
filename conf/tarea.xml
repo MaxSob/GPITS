@@ -3,6 +3,7 @@
 <nombre>Tarea</nombre>
 <descripcion>
  El módulo de actividad tarea le permite al maestro comunicar quehaceres, recolectar los trabajos y proporcionar calificaciones y retroalimentación.
+ |parse|<![CDATA[ <iframe width="236" height="115" src="https://www.youtube.com/embed/_fbJx__lWPE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>]]>
 </descripcion>
 <tipo_campo>
   Existe una gran vairdad de herramientas externas con soporte LTI (). Puedes consultar algunas en <a href="https://www.imsglobal.org/cc/statuschart.cfm">aquí</a>
@@ -23,7 +24,7 @@ Pueden añadirse filtros adicionales para usar en la tarea, tales como plantilla
 Si se habilita la feha de envío, los estudiantes no podrán envíar nada antes de esta fecha. Si se deshabilita, los estudiantes podrán empezar a enviar inmediatamente.
 </envios_desde>
 <fecha_entrega>
-La fecha de entrega es la fecha cuando se debería de entregar la tarea. Los envíos seguirán siendo permitidos aún después de esta fecha de entrega, pero cualquier envío mandado después de esta fecha será marcado como 'retrasado'. Para evitar que se puedan enviar tareas depués de una cierta fecha debe configurar la fecha de corte.
+Es la fecha cuando se debería de entregar la tarea. Los envíos seguirán siendo permitidos aún después de esta fecha de entrega, pero cualquier envío mandado después de esta fecha será marcado como 'retrasado'. Para evitar que se puedan enviar tareas depués de una cierta fecha debe configurar la fecha de corte.
 </fecha_entrega>
 <fecha_corte>
 Si se configura la fecha de corte, la tarea no aceptará envíos después de esta fecha si no hubiera extensiones.
@@ -148,5 +149,12 @@ Esta opción especifica la fecha en que se espera que la actividad esté finaliz
 <competencias>
 Competencias del curso enlazadas a la actividad
 </competencias>
-<ejemplo>/files/ejemplo_tarea.pdf</ejemplo>
+<ejemplo>
+Acá puedes observar un video sobre la capacitación en el uso de las tareas
+|parse|<![CDATA[ <iframe width="236" height="115" src="https://www.youtube.com/embed/_fbJx__lWPE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>]]>
+</ejemplo>
+<video>
+Acá puedes observar un video sobre la capacitación en el uso de las tareas
+|parse|<![CDATA[ <iframe width="236" height="115" src="https://www.youtube.com/embed/_fbJx__lWPE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>]]>
+</video>
 </tool>
