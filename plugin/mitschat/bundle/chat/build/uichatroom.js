@@ -239,7 +239,7 @@ define(['jquery', 'jqueryui', 'bundle/io/build/iolib'], function($, jui, io) {
                 //this.toggleBox();
                 //alert("Editando el curso. Mandar recomendación");
                 //options.boxManager.toggleBox();
-                $.getJSON("/mcampos/GPITS/gpitsservice.php?&user=" + id + "&r=1", function (data) {
+                $.getJSON("/GPITS/gpitsservice.php?&user=" + id + "&r=1", function (data) {
                     setTimeout(function () {
                         self.options.boxManager.addMsg('MITS', 'Recomendación: ' + data.respuesta);
                         //$(this).val('');
