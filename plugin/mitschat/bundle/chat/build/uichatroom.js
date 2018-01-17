@@ -193,7 +193,7 @@ define(['jquery', 'jqueryui', 'bundle/io/build/iolib'], function($, jui, io) {
                           chunk = chunk.replace("]]>", "");*/
                           var stripped = chunk.replace(/(<([^>]+)>)/ig,"");
                           if(stripped == addcontent[i]) {
-                            self.options.boxManager.addMsg('Tutor', stripped);
+                            self.options.boxManager.addMsg('MITS', stripped);
                             console.log("Msg added...");
                           } else {
                             self.options.boxManager.addHTML(addcontent[i]);
@@ -241,7 +241,7 @@ define(['jquery', 'jqueryui', 'bundle/io/build/iolib'], function($, jui, io) {
                 //options.boxManager.toggleBox();
                 $.getJSON("/mcampos/GPITS/gpitsservice.php?&user=" + id + "&r=1", function (data) {
                     setTimeout(function () {
-                        self.options.boxManager.addMsg('Tutor', 'Recomendación: ' + data.respuesta);
+                        self.options.boxManager.addMsg('MITS', 'Recomendación: ' + data.respuesta);
                         //$(this).val('');
                         console.log('Lista la recomendación');
                     }, 1000);

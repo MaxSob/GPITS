@@ -26,8 +26,11 @@
     <sinonyms>
       <sinonym>QUE ES</sinonym>
       <sinonym>DE QUE VA</sinonym>
-       <sinonym>DESCRIBEME</sinonym>
-        <sinonym>DESCRIPCION</sinonym>
+      <sinonym>DESCRIBEME</sinonym>
+      <sinonym>DESCRIPCION</sinonym>
+      <sinonym>DIME SOBRE</sinonym>
+      <sinonym>DAME INFORMACION</sinonym>
+      <sinonym>INFORMACION</sinonym>
     </sinonyms>
   </property>
 
@@ -40,6 +43,13 @@
     </sinonyms>
   </property>
 
+  <property>
+    <key>video</key>
+    <sinonyms>
+      <sinonym>VIDEO</sinonym>
+      <sinonym>VISUAL</sinonym>
+    </sinonyms>
+  </property>
 
   <property>
     <key>envios_desde</key>
@@ -55,6 +65,7 @@
     <key>fecha_entrega</key>
     <sinonyms>
       <sinonym>FECHA DE ENTREGA</sinonym>
+      <sinonym>:ENTREGA</sinonym>
     </sinonyms>
   </property>
 
@@ -96,6 +107,7 @@
     <sinonyms>
       <sinonym>COMO SE PLANEAN</sinonym>
       <sinonym>PLANEACION</sinonym>
+      <sinonym>COMO SE HACEN</sinonym>
     </sinonyms>
   </property>
 
@@ -352,8 +364,11 @@
       <sinonym>DE QUE SE COMPONE</sinonym>
       <sinonym>QUE PARTES TIENE</sinonym>
       <sinonym>QUE ELEMENTOS TIENE</sinonym>
+      <sinonym>QUE ELEMENTOS DEBE CONTENER</sinonym>
       <sinonym>CUALES SON SUS PARTES</sinonym>
       <sinonym>QUE SECCIONES TIENE</sinonym>
+      <sinonym>COMO SE HACE</sinonym>
+      <sinonym>ELEMENTOS</sinonym>
     </sinonyms>
   </property>
 
