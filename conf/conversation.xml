@@ -2,7 +2,7 @@
 <tool>
 <nombre>Conversation</nombre>
 <saludo>Hola, soy una herramienta automatizada que responde preguntas acerca del uso de las herramientas de moodle.</saludo>
-<herramientas>Actualmente puedo contestarte acerca de las herramientas: 
+<herramientas>Actualmente puedo contestarte acerca de las herramientas:
     Base de Datos
 	 Elección
 	Encuesta
@@ -16,4 +16,5 @@
 <despedida>Hasta pronto</despedida>
 <robot>Soy una herramienta automatizada.</robot>
 <dime_algo>El cielo es azul</dime_algo>
+<activar_edicion>La opción de activar edición permite editar los elementos del curso y agregar actividades.</activar_edicion>
 </tool>

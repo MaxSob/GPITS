@@ -158,7 +158,7 @@ class MITSController extends ChatBotController {
       if($data == null || $data == '')
         $data = "¿Puedes reformular la pregunta?";
     }
-      
+
 
     //Update the interactions
     $mm->addInteraction($user, $query->raw_data, $data);
@@ -255,7 +255,9 @@ class MITSUserProfiler extends UserProfiler {
     for($i = 0; $i < $pn; $i++) {
       //We compute s as the soft cosine smilarity between profile i and user data
       $b = $this->profiles[$i];
-      $s = $this->computeSimilarity($user_data, $b, $l);
+      //$s = $this->computeSoftCosineSimilarity($user_data, $b, $l);
+      $s = $this->computeCosineSimilarity($user_data, $b, $l);
+      //$s = $this->computeSimilarity($user_data, $b, $l);
 
       if($s > $similarity) {
         $index = $i;
@@ -382,7 +384,7 @@ class MITSTutor extends Tutor {
     }
     return $this->attendRequest('TQue es ' . $this->profiler->getTool($index), $user);
   }
-  
+
   //This function attends a request from a user
   public function attendRequest($request, $user) {
     //echo "Answering to $request <br />";

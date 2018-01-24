@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <tool>
+<nombre>SCORM</nombre>
 <nombre>Paquete SCORM</nombre>
 <descripcion>
 Un paquete SCORM es una colección de archivos que están empaquetados de acuerdo a el stándard acordado para objetos de aprendizaje. El módulo de actividad SCORM permite que los paquetes SCORM o AICC se suban como un archivo ZIP y se añadan al curso.

@@ -31,6 +31,7 @@
       <sinonym>DIME SOBRE</sinonym>
       <sinonym>DAME INFORMACION</sinonym>
       <sinonym>INFORMACION</sinonym>
+      <sinonym>EN QUE CONSISTE</sinonym>
     </sinonyms>
   </property>
 
@@ -103,11 +104,29 @@
   </property>
 
   <property>
+    <key>tipos_tarea</key>
+    <sinonyms>
+      <sinonym>QUE TIPOS DE TAREA HAY</sinonym>
+      <sinonym>TIPOS DE TAREA</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
     <key>planeacion_ada</key>
     <sinonyms>
       <sinonym>COMO SE PLANEAN</sinonym>
       <sinonym>PLANEACION</sinonym>
       <sinonym>COMO SE HACEN</sinonym>
+      <sinonym>HACER UN ADA</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>hacer_tarea</key>
+    <sinonyms>
+      <sinonym>COMO SE HACE UNA TAREA</sinonym>
+      <sinonym>COMO HACER UNA TAREA</sinonym>
+      <sinonym>HACER UNA TAREA</sinonym>
     </sinonyms>
   </property>
 
@@ -186,7 +205,7 @@
   </property>
 
   <property>
-    <key>intentos_reabiertos</key>
+    <key>intentos_maximos</key>
     <sinonyms>
       <sinonym>INTENTOS MAXIMOS</sinonym>
       <sinonym>MAXIMO NUMERO DE INTENTOS</sinonym>
@@ -267,6 +286,7 @@
     <key>flujograma_calificador</key>
     <sinonyms>
       <sinonym>FLUJOGRAMA CALIFICADOR</sinonym>
+      <sinonym>CALIFICADOR</sinonym>
     </sinonyms>
   </property>
 
@@ -418,6 +438,13 @@
       <sinonym>Que hay</sinonym>
       <sinonym>Que pex</sinonym>
       <sinonym>Buen día</sinonym>
+    </sinonyms>
+  </property>
+
+  <property>
+    <key>activar_edicion</key>
+    <sinonyms>
+      <sinonym>ACTIVAR EDICION</sinonym>
     </sinonyms>
   </property>
 

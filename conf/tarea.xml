@@ -2,11 +2,17 @@
 <tool>
 <nombre>Tarea</nombre>
 <descripcion>
- El módulo de actividad tarea le permite al maestro comunicar quehaceres, recolectar los trabajos y proporcionar calificaciones y retroalimentación.
+El módulo de actividad tarea le permite al maestro comunicar quehaceres, recolectar los trabajos y proporcionar calificaciones y retroalimentación.
  |parse|<![CDATA[ <iframe width="236" height="115" src="https://www.youtube.com/embed/_fbJx__lWPE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>]]>
 </descripcion>
+<hacer_tarea>
+El módulo de actividad tarea le permite al maestro comunicar quehaceres, recolectar los trabajos y proporcionar calificaciones y retroalimentación.
+|parse|<![CDATA[ <iframe width="236" height="115" src="https://www.youtube.com/embed/_fbJx__lWPE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>]]>
+</hacer_tarea>
 <tipo_campo>
-  Existe una gran vairdad de herramientas externas con soporte LTI (). Puedes consultar algunas en <a href="https://www.imsglobal.org/cc/statuschart.cfm">aquí</a>
+  Existe una gran vairdad de herramientas externas con soporte LTI (). Puedes consultar algunas en
+  |parse|
+ <![CDATA[<a href="https://www.imsglobal.org/cc/statuschart.cfm">aquí</a>]]>
 </tipo_campo>
 <como_funciona>
 Los estudiantes pueden enviar cualquier contenido digital (archivos), tal como documentos de procesador de textos, hojas de cálculo, imágenes y clips de audio o video. De forma alterna, o adicional, la tarea puede requerir que el estudiante escriba texto directamente en un campo empleando un editor de texto.
@@ -137,8 +143,8 @@ El número ID proporciona una forma de identificar la actividad a fin de poder c
   El modo de grupo debe estar ajustado a grupos visibles o separados
 </agrupamiento>
 <seguimiento_finalizacion>
-  Si se activa esta opción, se rastrea el grado de finalización de cualquier actividad, bien manual, bien automáticamente, basándose en determinadas condiciones. Si se desea, se pueden fijar múltiples condiciones. Si se hace así, la actividad únicamente se considerará completa si se cumplen TODAS las condiciones.
-  Una marca (paloma) al lado del nombre de la actividad en la página del curso indica cuándo la actividad está completa.
+Si se activa esta opción, se rastrea el grado de finalización de cualquier actividad, bien manual, bien automáticamente, basándose en determinadas condiciones. Si se desea, se pueden fijar múltiples condiciones. Si se hace así, la actividad únicamente se considerará completa si se cumplen TODAS las condiciones.
+Una marca (paloma) al lado del nombre de la actividad en la página del curso indica cuándo la actividad está completa.
 </seguimiento_finalizacion>
 <requerir_calificacion>
 Si se activa, la actividad se considera finalizada cuando un estudiante recibe una calificación. Los iconos Aprobar y Suspender se muestran si se ha establecido una calificación de aprobado para la actividad
@@ -153,6 +159,9 @@ Competencias del curso enlazadas a la actividad
 Acá puedes observar un video sobre la capacitación en el uso de las tareas
 |parse|<![CDATA[ <iframe width="236" height="115" src="https://www.youtube.com/embed/_fbJx__lWPE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>]]>
 </ejemplo>
+<tipos_tarea>
+Actualmente no tengo información relacionada a los tipos de tarea, pero la aprenderé en breve.
+</tipos_tarea>
 <video>
 Acá puedes observar un video sobre la capacitación en el uso de las tareas
 |parse|<![CDATA[ <iframe width="236" height="115" src="https://www.youtube.com/embed/_fbJx__lWPE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>]]>
